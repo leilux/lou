@@ -1,0 +1,523 @@
+<!DOCTYPE HTML>
+<html lang="en-US" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <title>第6章 结构 | </title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 1.1.0">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    
+    <link rel="next" href="../cap7/cap7.html" />
+    
+    
+    <link rel="prev" href="../cap5/cap5.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+<link rel="stylesheet" href="../gitbook/style.css">
+
+
+        
+    <div class="book" data-level="6" data-basepath=".." data-revision="1435825976787">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+    	
+    	
+    	
+
+        
+
+        
+    
+        
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                        <i class="fa fa-check"></i>
+                        
+                         Introduction
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1" data-path="cap1/cap1.html">
+            
+                
+                    <a href="../cap1/cap1.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                         第1章 导言
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2" data-path="cap2/cap2.html">
+            
+                
+                    <a href="../cap2/cap2.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                         第2章 类型、运算符与表达式
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3" data-path="cap3/cap3.html">
+            
+                
+                    <a href="../cap3/cap3.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                         第3章 控制流
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4" data-path="cap4/cap4.html">
+            
+                
+                    <a href="../cap4/cap4.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                         第4章 函数与程序结构
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5" data-path="cap5/cap5.html">
+            
+                
+                    <a href="../cap5/cap5.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                         第5章 指针与数组
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter active" data-level="6" data-path="cap6/cap6.html">
+            
+                
+                    <a href="../cap6/cap6.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                         第6章 结构
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7" data-path="cap7/cap7.html">
+            
+                
+                    <a href="../cap7/cap7.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                         第7章 输入与输出
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="8" data-path="cap8/cap8.html">
+            
+                
+                    <a href="../cap8/cap8.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                         第8章 UNIX系统接口
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="9" data-path="优先级.html">
+            
+                
+                    <a href="../优先级.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.</b>
+                        
+                         运算符优先级总结
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="10" data-path="cap2/char *s与char s[]的区别.html">
+            
+                
+                    <a href="../cap2/char *s与char s[]的区别.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.</b>
+                        
+                         char *s与char s[]的区别
+                    </a>
+                
+            
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Published using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle share dropdown"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">Twitter</button>
+                <button type="button" data-sharing="google-plus" class="button">Google</button>
+                <button type="button" data-sharing="facebook" class="button">Facebook</button>
+                <button type="button" data-sharing="weibo" class="button">Weibo</button>
+                <button type="button" data-sharing="instapaper" class="button">Instapaper</button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" ></a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-gitbook_38">
+                    
+                        <h2 id="61-">6.1 结构的基本知识</h2>
+<p>struct声明定义了一种数据类型</p>
+<pre><code class="lang-c"><span class="hljs-comment">// 结构声明，point为标记</span>
+<span class="hljs-keyword">struct</span> point {
+    <span class="hljs-keyword">int</span> x;
+    <span class="hljs-keyword">int</span> y;
+    point (<span class="hljs-keyword">int</span> x, <span class="hljs-keyword">int</span> y) {
+        x = x;
+        y = y;
+    }
+}; 
+
+<span class="hljs-comment">// 变量声明</span>
+<span class="hljs-keyword">struct</span> point pt;
+<span class="hljs-keyword">struct</span> point {<span class="hljs-keyword">int</span> x; <span class="hljs-keyword">int</span> y} pt;
+<span class="hljs-keyword">struct</span> {<span class="hljs-keyword">int</span> x; <span class="hljs-keyword">int</span> y} pt; <span class="hljs-comment">// 不可复用</span>
+
+<span class="hljs-comment">// 初始化</span>
+<span class="hljs-keyword">struct</span> point maxpt = {<span class="hljs-number">320</span>, <span class="hljs-number">200</span>};
+<span class="hljs-keyword">struct</span> point maxpt = point(<span class="hljs-number">320</span>, <span class="hljs-number">200</span>);
+
+<span class="hljs-keyword">struct</span> point maxpt;
+maxpt.x = <span class="hljs-number">320</span>;
+maxpt.y = <span class="hljs-number">200</span>;
+
+<span class="hljs-comment">// 操作</span>
+<span class="hljs-comment">// 作为一个整体复制和赋值，通过&amp;运算符取地址，访问其成员</span>
+<span class="hljs-keyword">struct</span> point *pp;
+pp-&gt;x;
+pp-&gt;y;
+(*pp).x;
+(*pp).y;
+<span class="hljs-comment">//运算符.和-&gt;都是从左至右结合的</span>
+</code></pre>
+<h2 id="62-">6.2 结构与函数</h2>
+<p>结构的复制和赋值包括向函数传递参数以及从函数返回值。</p>
+<h2 id="63-">6.3 结构数组</h2>
+<pre><code class="lang-c"><span class="hljs-comment">// 声明</span>
+<span class="hljs-keyword">struct</span> key {
+    <span class="hljs-keyword">char</span> *word;
+    <span class="hljs-keyword">int</span> count;
+} keytab[NKEYS];
+
+<span class="hljs-keyword">struct</span> key {
+    <span class="hljs-keyword">char</span> *word;
+    <span class="hljs-keyword">int</span> count;
+}
+strcut key keytab[NKEYS];
+
+<span class="hljs-comment">// 声明 + 初始化</span>
+<span class="hljs-keyword">struct</span> key {
+    <span class="hljs-keyword">char</span> *word;
+    <span class="hljs-keyword">int</span> count;
+} keytab[] = {
+    {<span class="hljs-string">"auto"</span>, <span class="hljs-number">0</span>},
+    {<span class="hljs-string">"break"</span>, <span class="hljs-number">0</span>},
+    {<span class="hljs-string">"case"</span>, <span class="hljs-number">0</span>},
+    {...},
+};
+
+<span class="hljs-keyword">struct</span> key {
+    <span class="hljs-keyword">char</span> *word;
+    <span class="hljs-keyword">int</span> count;
+} keytab[] = { <span class="hljs-comment">// 如果初值是简单变量或字符串，并且其中的任何值都不为空，则内层的花括号可以省略</span>
+    <span class="hljs-string">"auto"</span>, <span class="hljs-number">0</span>,
+    <span class="hljs-string">"break"</span>, <span class="hljs-number">0</span>,
+    <span class="hljs-string">"case"</span>, <span class="hljs-number">0</span>,
+    ...
+};
+</code></pre>
+<p>sizeof一个编译时(compile-time)一元运算符，用来计算任一对象的长度(无符号整型size_t,在<stddef.h>中定义</p>
+<p>sizeof 对象
+sizeof (类型名)</p>
+<p>条件编译语句#if不能用sizeof:预处理器不对类型名进行分析，预处理器不计算#define语句中的表达式，#define可以</p>
+<p>结构的长度不一定等于各成员长度的和，因为不同的对象有不同的对齐要求，struct {char c; int i;};可能需要8个字节的存储空间，而不是5个字节。</p>
+<h2 id="64-">6.4 指向结构的指针</h2>
+<p>当函数的返回值类型比较复杂时，如</p>
+<p>struct key <em>binsearch(char </em>word, struct key *tab, int n)</p>
+<p>可以写成如下格式</p>
+<p>struct key <em>
+binsearch(char </em>word, struct key *tab, int n)</p>
+<h2 id="65-">6.5 自引用结构</h2>
+<pre><code class="lang-c"><span class="hljs-keyword">struct</span> tnode {
+    <span class="hljs-keyword">char</span> *word;
+    <span class="hljs-keyword">int</span> count;
+    <span class="hljs-keyword">struct</span> tnode *left;
+    <span class="hljs-keyword">struct</span> tnode *right;
+}
+
+<span class="hljs-keyword">struct</span> t {
+    ...
+    <span class="hljs-keyword">struct</span> s *p;
+}
+<span class="hljs-keyword">struct</span> s {
+    ...
+    <span class="hljs-keyword">struct</span> s *q;
+}
+</code></pre>
+<h2 id="66-">6.6 表查找</h2>
+<p>install(s,t)将名字s和替换文本记录到某个表中
+lookup(s)在表中查找s，找到返回指向该处的指针，没找到，返回NULL</p>
+<p>哈希查找方法</p>
+<pre><code class="lang-c"><span class="hljs-comment">/* hash */</span>
+<span class="hljs-keyword">unsigned</span> hash(<span class="hljs-keyword">char</span> *s)
+{
+    <span class="hljs-keyword">unsigned</span> hashval;
+
+    <span class="hljs-keyword">for</span> (hashval=<span class="hljs-number">0</span>; *s!=<span class="hljs-string">'\0'</span>; s++)
+        hashval = *s + <span class="hljs-number">31</span> * hashval;
+    <span class="hljs-keyword">return</span> hashval % HASHSIZE;
+}
+</code></pre>
+<h2 id="67-typedef">6.7 类型定义(typedef)</h2>
+<p>用来建立新的数据类型名，新定义的类型名一般首字母大写。</p>
+<pre><code class="lang-c"><span class="hljs-keyword">typedef</span> <span class="hljs-keyword">int</span> length;
+
+<span class="hljs-keyword">typedef</span> <span class="hljs-keyword">struct</span> tnode *Treeptr;
+
+<span class="hljs-keyword">typedef</span> <span class="hljs-keyword">struct</span> tnode {
+    <span class="hljs-keyword">char</span> *word;
+    <span class="hljs-keyword">int</span> count;
+    Treeptr left;
+    Treeptr right;
+} Treenode;
+
+<span class="hljs-keyword">typedef</span> <span class="hljs-keyword">int</span> (*PFI)(<span class="hljs-keyword">char</span> *, <span class="hljs-keyword">char</span> *); <span class="hljs-comment">// 一个指向函数的指针，有两个char*类型的参数，返回值类型为int。</span>
+PFI <span class="hljs-built_in">strcmp</span>, numcmp;
+</code></pre>
+<p>typedef类似于#define，typedef由编译器解释的，文本替换功能要超过预处理器的能力。</p>
+<p>好处：</p>
+<ol>
+<li>程序参数化，提高可移植性</li>
+<li>更好的说明性</li>
+</ol>
+<h2 id="68-">6.8 联合</h2>
+<p>联合的目的：一个变量可以合法地保存多种数据类型中任何一种类型的对象</p>
+<p>表达式中读取的类型必须是最近一次存入和类型。程序员负责跟踪当前保存在联合中的类型。如果保存的类型与读取的类型不一致，其结果取决于具体的实现。</p>
+<pre><code class="lang-c"><span class="hljs-keyword">double</span> bit2double(<span class="hljs-keyword">unsigned</span> word0, <span class="hljs-keyword">unsigned</span> word1)
+{
+    <span class="hljs-keyword">union</span> {
+        <span class="hljs-keyword">double</span> d;
+        <span class="hljs-keyword">unsigned</span> u[<span class="hljs-number">2</span>];
+    } temp;
+    temp.u[<span class="hljs-number">0</span>] = word0;
+    temp.u[<span class="hljs-number">1</span>] = word1;
+    <span class="hljs-keyword">return</span> temp.d;
+}
+</code></pre>
+<p>初始化</p>
+<p>只能用第一个成员类型的值进行初始化。</p>
+<h2 id="69-">6.9 位字段</h2>
+<p>设置</p>
+<p>flags |= EXTERNAL | STATIC；</p>
+<p>检测</p>
+<p>if ((flags &amp; EXTERNAL) == 0)</p>
+<p>替代以上情况</p>
+<pre><code class="lang-c"><span class="hljs-keyword">struct</span> {
+    <span class="hljs-keyword">unsigned</span> <span class="hljs-keyword">int</span> is_keyword : <span class="hljs-number">1</span>;
+    <span class="hljs-keyword">unsigned</span> <span class="hljs-keyword">int</span> is_extern : <span class="hljs-number">1</span>;
+    <span class="hljs-keyword">unsigned</span> <span class="hljs-keyword">int</span> is_static : <span class="hljs-number">1</span>;
+} flags;
+</code></pre>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../cap5/cap5.html" class="navigation navigation-prev " aria-label="Previous page: 第5章 指针与数组"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../cap7/cap7.html" class="navigation navigation-next " aria-label="Next page: 第7章 输入与输出"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="https://cdn.mathjax.org/mathjax/2.4-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

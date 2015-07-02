@@ -1,0 +1,15 @@
+#使用Microsoft Outlook管理Google Apps的邮件、通讯录及日历
+
+2009年6月9日，周二
+
+去年一年我们都专注于如何降低企业部署Google Apps的成本。在过去的几个月已经有若干改进面世，包括离线Gmail、用户文件夹同步以及与黑莓的全面互通性。
+
+今天我们非常兴奋地宣布又一项改进面世了，它就是面向Microsoft Outlook的Google Apps同步插件（Google Apps Sync）。该插件允许你通过Microsoft Outlook无缝管理Google Apps专业版或教育版，从此企业部署Google Apps的又一个关键障碍被排除了。
+
+相较于商务用户以往使用的产品而言，Gmail的界面和特性更受他们喜爱，但有些时候总有一批用户只喜欢Outlook。为了方便他们使用Google Apps，我们开发了面向Microsoft Outlook的Google Apps同步插件。它允许Outlook的用户管理Google Apps的商业邮件、通讯录和日历，并且当他们的工作电脑不在身边时还可以通过Gmail的网页端来获取这些信息。
+
+它的核心功能点如下:
+
+* 邮件、日历和通讯录同步。同步插件使用离线Gmail协议来同步邮件，比IMAP及其他协议速度要快很多。
+* 空闲/忙碌状态查看和全局邮件列表功能，不管你的同事是使用Outlook日历还是Google日历，你都可以轻松发送会议邀请。
+* 简单的数据迁移工具。只需要两次点击，企业雇员就可以把Exchange或者Outlook的现有数据复制到Google Apps中

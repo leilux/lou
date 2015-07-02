@@ -1,0 +1,429 @@
+<!DOCTYPE HTML>
+<html lang="en-US" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <title>寻找独立特征 | 机器学习</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 1.1.0">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    
+    <link rel="next" href="../../PCI/cap11/cap11.html" />
+    
+    
+    <link rel="prev" href="../../PCI/cap9/cap9.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+<link rel="stylesheet" href="../../gitbook/style.css">
+
+
+        
+    <div class="book" data-level="1.9" data-basepath="../.." data-revision="1428042646490">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+    	
+    	
+    	
+
+        
+
+        
+    
+        
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../../index.html">
+                        <i class="fa fa-check"></i>
+                        
+                         Introduction
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1" data-path="PCI/readme.html">
+            
+                
+                    <a href="../../PCI/readme.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                         集体智慧编程
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="1.1" data-path="PCI/cap2/cap2.html">
+            
+                
+                    <a href="../../PCI/cap2/cap2.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                         提供推荐
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.2" data-path="PCI/cap3/cap3.html">
+            
+                
+                    <a href="../../PCI/cap3/cap3.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                         发现群组
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.3" data-path="PCI/cap4/cap4.html">
+            
+                
+                    <a href="../../PCI/cap4/cap4.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                         搜索与排名
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.4" data-path="PCI/cap5/cap5.html">
+            
+                
+                    <a href="../../PCI/cap5/cap5.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                         优化
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.5" data-path="PCI/cap6/cap6.html">
+            
+                
+                    <a href="../../PCI/cap6/cap6.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.</b>
+                        
+                         文档过滤
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.6" data-path="PCI/cap7/cap7.html">
+            
+                
+                    <a href="../../PCI/cap7/cap7.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.</b>
+                        
+                         决策树建模
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.7" data-path="PCI/cap8/cap8.html">
+            
+                
+                    <a href="../../PCI/cap8/cap8.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.7.</b>
+                        
+                         构建价格模型
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.8" data-path="PCI/cap9/cap9.html">
+            
+                
+                    <a href="../../PCI/cap9/cap9.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.8.</b>
+                        
+                         高阶分类：核心方法和SVMs
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter active" data-level="1.9" data-path="PCI/cap10/cap10.html">
+            
+                
+                    <a href="../../PCI/cap10/cap10.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.9.</b>
+                        
+                         寻找独立特征
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.10" data-path="PCI/cap11/cap11.html">
+            
+                
+                    <a href="../../PCI/cap11/cap11.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.10.</b>
+                        
+                         智能进化
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.11" data-path="PCI/cap12/cap12.html">
+            
+                
+                    <a href="../../PCI/cap12/cap12.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.11.</b>
+                        
+                         算法总结
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Published using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle share dropdown"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">Twitter</button>
+                <button type="button" data-sharing="google-plus" class="button">Google</button>
+                <button type="button" data-sharing="facebook" class="button">Facebook</button>
+                <button type="button" data-sharing="weibo" class="button">Weibo</button>
+                <button type="button" data-sharing="instapaper" class="button">Instapaper</button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../" >机器学习</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-gitbook_2">
+                    
+                        <h2 id="----finding-independent-features">寻找独立特征 -- Finding Independent Features</h2>
+<p>本章将研究如何在数据集并未明确标识结果的前提下，从中提取出重要的潜在特征来。
+和聚类一样，这些方法的目的不是为了预测，而是要尝试对数据进行特征识别，并且告诉我们值得关注的重要信息。
+聚类算法将数据集中的每一行数据分别分配给了层级结构中的某个组（group）或某个点（point）——每一项数据都精确对应于一个组，这个组代表了组内成员的平均水平。
+特征提取：是以上思想的一般表现形式；
+它会尝试从数据集中寻找新的数据行，将这些新找到的数据行加以组合，就可以重新构造出数据集。
+和原始数据集不一样，位于新数据集中的每一行数据并不属于某个聚类，而是由若干特征的组合构造而成的。</p>
+<p>寻找独立特征的必要性例子：
+鸡尾酒宴会问题：在多人谈话时鉴别声音的问题
+对重复出现于一组文档中的单词使用模式（word-usage patterns）进行识别，可以识别出，以不同组合形式独立出现于各个文档中的主题。
+本章例子：
+一个从不同订阅源下载新闻报道的系统，并从一组报道文章中识别出关键主题来。一篇文章可以包含不止一个主题，主题也可以用于不止一篇文章。
+关于股票市场数据：将同样的算法用于股票数据，寻找数据背后的原因，以及它们各自对结果所构成的影响。</p>
+<h3 id="----a-corpus-of-news">搜集一组新闻 -- A Corpus of News</h3>
+<h4 id="----selecting-sources">选择新闻来源 -- Selecting Sources</h4>
+<h4 id="----downloading-sources">下载新闻来源 -- Downloading Sources</h4>
+<h4 id="----converting-to-a-matrix">转换成矩阵 -- Converting to a Matrix</h4>
+<h3 id="----previous-approaches">先前的方法 -- Previous Approaches</h3>
+<h4 id="----bayesian-classification">贝叶斯分类 -- Bayesian Classification</h4>
+<h4 id="----clustering">聚类 -- Clustering</h4>
+<h3 id="----non-negative-maxtrix-factorization">非负矩阵因式分解 -- Non-Negative Maxtrix Factorization</h3>
+<h4 id="----a-quick-introduction-to-matrix-math">矩阵数学简介 -- A Quick Introduction to Matrix Math</h4>
+<h4 id="----what-does-this-have-to-do-with-the-articles-matrix">这与文章矩阵有何关系？ -- What Does This Have to Do with the Articles Matrix?</h4>
+<h4 id="numpy----using-numpy">使用Numpy -- Using Numpy</h4>
+<h4 id="----the-algorithm">算法实现 -- The Algorithm</h4>
+<h3 id="----displaying-the-results">结果呈现 -- Displaying the Results</h3>
+<h4 id="----displaying-by-article">以文章的形式呈现 -- Displaying by Article</h4>
+<h3 id="----using-stock-market-data">利用股票市场的数据 -- Using Stock Market Data</h3>
+<h4 id="----what-is-trading-volume">什么是成交量 -- What Is Trading Volume?</h4>
+<h4 id="yahoo-finance----downloading-data-from-yahoo-finance">从Yahoo! Finance下载数据 -- Downloading Data from Yahoo! Finance</h4>
+<h4 id="----preparing-a-matrix">准备矩阵 -- Preparing a Matrix</h4>
+<h4 id="nmf----running-nmf">运行NMF -- Running NMF</h4>
+<h4 id="----displaying-the-results">结果呈现 -- Displaying the Results</h4>
+<h3 id="exercises">Exercises</h3>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../../PCI/cap9/cap9.html" class="navigation navigation-prev " aria-label="Previous page: 高阶分类：核心方法和SVMs"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../../PCI/cap11/cap11.html" class="navigation navigation-next " aria-label="Next page: 智能进化"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../../gitbook/app.js"></script>
+
+    
+    <script src="https://cdn.mathjax.org/mathjax/2.4-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

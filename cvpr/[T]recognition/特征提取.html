@@ -1,0 +1,618 @@
+<!DOCTYPE HTML>
+<html lang="en-US" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <title>特征提取 | CVPR</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 1.1.0">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    
+    <link rel="next" href="../[T]recognition/分类器算法.html" />
+    
+    
+    <link rel="prev" href="../[T]recognition/目标检测算法归纳.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+<link rel="stylesheet" href="../gitbook/style.css">
+
+
+        
+    <div class="book" data-level="3.3" data-basepath=".." data-revision="1433157582971">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+    	
+    	
+    	
+
+        
+
+        
+    
+        
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                        <i class="fa fa-check"></i>
+                        
+                         Introduction
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1" data-path="立体视觉-牛人-算法.html">
+            
+                
+                    <a href="../立体视觉-牛人-算法.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                         立体视觉-牛人-算法
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2" data-path="papers.html">
+            
+                
+                    <a href="../papers.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                         papers
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3" data-path="[T]recognition/readme.html">
+            
+                
+                    <a href="../[T]recognition/readme.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                         Recognition
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="3.1" data-path="[T]recognition/目标表达.html">
+            
+                
+                    <a href="../[T]recognition/目标表达.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                         目标表达
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.2" data-path="[T]recognition/目标检测算法归纳.html">
+            
+                
+                    <a href="../[T]recognition/目标检测算法归纳.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                         目标检测算法归纳
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter active" data-level="3.3" data-path="[T]recognition/特征提取.html">
+            
+                
+                    <a href="../[T]recognition/特征提取.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                         特征提取
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.4" data-path="[T]recognition/分类器算法.html">
+            
+                
+                    <a href="../[T]recognition/分类器算法.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                         分类器算法
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4" data-path="[T]tracking/readme.html">
+            
+                
+                    <a href="../[T]tracking/readme.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                         Tracking
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="4.1" data-path="[T]tracking/特征选取.html">
+            
+                
+                    <a href="../[T]tracking/特征选取.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                         特征选取
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.2" data-path="[T]tracking/跟踪算法归纳.html">
+            
+                
+                    <a href="../[T]tracking/跟踪算法归纳.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                         跟踪算法归纳
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.3" data-path="[T]tracking/发展方向.html">
+            
+                
+                    <a href="../[T]tracking/发展方向.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                         发展方向
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5" data-path="ROS/README.html">
+            
+                
+                    <a href="../ROS/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                         ROS
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="5.1" data-path="ROS/ecto.html">
+            
+                
+                    <a href="../ROS/ecto.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                         ecto
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.2" data-path="ROS/openni.html">
+            
+                
+                    <a href="../ROS/openni.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                         openni
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.3" data-path="opencv.html">
+            
+                
+                    <a href="../opencv.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                         opencv
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.4" data-path="pcl.html">
+            
+                
+                    <a href="../pcl.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                         pcl
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.5" data-path="ROS/FLIR-ptu46.html">
+            
+                
+                    <a href="../ROS/FLIR-ptu46.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.</b>
+                        
+                         FLIR ptu46
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.6" data-path="ROS/eclipse.html">
+            
+                
+                    <a href="../ROS/eclipse.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.</b>
+                        
+                         IDE Eclipse for ROS
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6" data-path="kinect/README.html">
+            
+                
+                    <a href="../kinect/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                         Kinect
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7" data-path="toolchain/README.html">
+            
+                
+                    <a href="../toolchain/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                         工具链
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="7.1" data-path="toolchain/docker.html">
+            
+                
+                    <a href="../toolchain/docker.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.1.</b>
+                        
+                         docker
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="8" data-path="研究方法.html">
+            
+                
+                    <a href="../研究方法.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                         研究方法
+                    </a>
+                
+            
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Published using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle share dropdown"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">Twitter</button>
+                <button type="button" data-sharing="google-plus" class="button">Google</button>
+                <button type="button" data-sharing="facebook" class="button">Facebook</button>
+                <button type="button" data-sharing="weibo" class="button">Weibo</button>
+                <button type="button" data-sharing="instapaper" class="button">Instapaper</button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >CVPR</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-gitbook_6">
+                    
+                        <p>图像特征最重要的属性是独特性，能够咋特征空间内方便区分目标。</p>
+<p>可用于跟踪的特征有颜色、边缘、光流和纹理，或者是其中几种的组合。</p>
+<ul>
+<li><strong>颜色</strong> -最常用的颜色空间是RGB，但它不是均匀分布的；均匀分布的颜色空间是HSV。根据应用选择合适的颜色空间。</li>
+<li><strong>边缘</strong> -边缘通常伴随着剧烈的intensity变化。对比于颜色特征，边缘特征对光照变化不敏感。最流行的边缘检测算法是Canny算子。</li>
+<li><strong>光流</strong> -光流特征是定义区域内每个像素变化的稠密位移向量域。通过计算区域内的光照对比度变化得到。通常应用在基于运动的分割和跟踪上。</li>
+<li><strong>纹理</strong> -纹理是检测物体表面intensity变化的手段，是对光滑程度和规则程度的量化。相对于颜色，它多了一个计算描述符的步骤，对于光照不敏感。GLCM，LAW，Wavelet等是常用的纹理描述符。</li>
+</ul>
+<p>大多数情况下图像特征的选择根据应用场合来决定。近来自适应的特征选择也越来越受到重视。自适应的方式可分为filter和wrapper两种形式。前者基于通用的选择标准选择采用的特征；后者基于特征在特定场合的适用程度选择。</p>
+<p>其中Adaboost是个流行的wrapper形式特征选择算法。它基于普通分类器的组合寻找最优分类器。</p>
+<p>在所有图像特征中，颜色是适用最广泛的，但不够稳定，因为其对光照变化敏感。因此很多情况下用到其它特征来建模目标外观，或使用特征的组合来改进跟踪算法效率。</p>
+<p>图像特征提取：</p>
+<ul>
+<li><a href="">SIFT</a></li>
+<li><a href="">SURF</a></li>
+<li><a href="http://blog.csdn.net/liulina603/article/details/8291093" target="_blank">HOG特征</a></li>
+<li><a href="http://blog.csdn.net/liulina603/article/details/8291105" target="_blank">LBP特征</a></li>
+<li><a href="http://blog.csdn.net/liulina603/article/details/8291112" target="_blank">Harr特征</a></li>
+<li><a href="">PDSS</a> <sup><a href="">[r5]</a></sup><blockquote>
+<p>深度图像的特征描述符，它的基本思想是：相对与背景来讲，人体呈现出一定的结构，人体自身各部分的深度信息具有局部相似性.</p>
+</blockquote>
+</li>
+</ul>
+<p>=============</p>
+<p>感觉目标比较盛行的有：Haar特征、LBP特征、HOG特征和Shif特征等；他们各有千秋，得视你要检测的目标情况而定，例如：
+拳头：纹理特征明显：Haar、LBP（目前有将其和HOG结合）；
+手掌：轮廓特征明显：HOG特征（行人检测一般用这个）；</p>
+<p>其中检测行人的一般是HOG特征+SVM，OpenCV中检测人脸的一般是Haar+AdaBoost，OpenCV中检测拳头一般是LBP+ AdaBoost；</p>
+<h2 id="harr">Harr型特征</h2>
+<p><a href="http://blog.csdn.net/cy513/article/details/4285579" target="_blank">SIFT/SURF、haar特征、广义hough变换的特性对比分析</a></p>
+<blockquote>
+<p>haar特征识别方法带有一点人工智能的意味，对于像人脸这种有明显的、稳定结构的haar特征的物体最适用，只要结构相对固定即使发生扭曲等非线性形变依然可识别；haar方法比较简单，偏向一种统计的方法形成特征，这也使其具有一定的模糊弹性；</p>
+</blockquote>
+<p><a href="http://blog.csdn.net/liulina603/article/details/8617281" target="_blank">Haar特征与积分图</a></p>
+<blockquote>
+<p>两矩形特征反映的是边缘特征，三矩形特征反映的是线性特征、四矩形特征反映的是特定方向特征。<br><strong>图像检测过程</strong><br>使用级联分类器的AdaBoost的人脸检测算法的速度非常的快，不可能采用图像缩放的方法，因为仅仅是把图像缩放11级的处理，就要消耗一秒钟至少，已经不能达到Adaboost 的实时处理的要求了。<br>因为Haar特征具有与检测窗口大小无关的特性（想要了解细节还要读一下原作者的文献），所以可以将检测窗口进行级别方法。<br>在检测的最初，检测窗口和样本大小一致，然后按照一定的尺度参数（即每次移动的像素个数，向左然后向下）进行移动，遍历整个图像，标出可能的人脸区域。遍历完以后按照指定的放大的倍数参数放大检测窗口，然后在进行一次图像遍历；这样不停的放大检测窗口对检测图像进行遍历，直到检测窗口超过原图像的一半以后停止遍历。因为 整个算法的过程非常快，即使是遍历了这么多次，根据不同电脑的配置大概处理一幅图像也就是几十毫秒到一百毫秒左右。  </p>
+</blockquote>
+<ul>
+<li><a href="http://blog.csdn.net/liulina603/article/details/8291112" target="_blank">目标检测的图像特征提取之（三）Haar特征</a></li>
+<li><a href="http://blog.csdn.net/zouxy09/article/details/7922923" target="_blank">浅析人脸检测之Haar分类器方法：Haar特征、积分图、 AdaBoost 、级联</a></li>
+</ul>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../[T]recognition/目标检测算法归纳.html" class="navigation navigation-prev " aria-label="Previous page: 目标检测算法归纳"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../[T]recognition/分类器算法.html" class="navigation navigation-next " aria-label="Next page: 分类器算法"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="https://cdn.mathjax.org/mathjax/2.4-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

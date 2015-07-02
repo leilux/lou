@@ -1,0 +1,502 @@
+<!DOCTYPE HTML>
+<html lang="en-US" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <title>第5章 指针与数组 | </title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 1.1.0">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    
+    <link rel="next" href="../cap6/cap6.html" />
+    
+    
+    <link rel="prev" href="../cap4/cap4.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+<link rel="stylesheet" href="../gitbook/style.css">
+
+
+        
+    <div class="book" data-level="5" data-basepath=".." data-revision="1435825976787">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+    	
+    	
+    	
+
+        
+
+        
+    
+        
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                        <i class="fa fa-check"></i>
+                        
+                         Introduction
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1" data-path="cap1/cap1.html">
+            
+                
+                    <a href="../cap1/cap1.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                         第1章 导言
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2" data-path="cap2/cap2.html">
+            
+                
+                    <a href="../cap2/cap2.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                         第2章 类型、运算符与表达式
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3" data-path="cap3/cap3.html">
+            
+                
+                    <a href="../cap3/cap3.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                         第3章 控制流
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4" data-path="cap4/cap4.html">
+            
+                
+                    <a href="../cap4/cap4.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                         第4章 函数与程序结构
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter active" data-level="5" data-path="cap5/cap5.html">
+            
+                
+                    <a href="../cap5/cap5.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                         第5章 指针与数组
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6" data-path="cap6/cap6.html">
+            
+                
+                    <a href="../cap6/cap6.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                         第6章 结构
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7" data-path="cap7/cap7.html">
+            
+                
+                    <a href="../cap7/cap7.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                         第7章 输入与输出
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="8" data-path="cap8/cap8.html">
+            
+                
+                    <a href="../cap8/cap8.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                         第8章 UNIX系统接口
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="9" data-path="优先级.html">
+            
+                
+                    <a href="../优先级.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.</b>
+                        
+                         运算符优先级总结
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="10" data-path="cap2/char *s与char s[]的区别.html">
+            
+                
+                    <a href="../cap2/char *s与char s[]的区别.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.</b>
+                        
+                         char *s与char s[]的区别
+                    </a>
+                
+            
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Published using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle share dropdown"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">Twitter</button>
+                <button type="button" data-sharing="google-plus" class="button">Google</button>
+                <button type="button" data-sharing="facebook" class="button">Facebook</button>
+                <button type="button" data-sharing="weibo" class="button">Weibo</button>
+                <button type="button" data-sharing="instapaper" class="button">Instapaper</button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" ></a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-gitbook_31">
+                    
+                        <h2 id="51-">5.1 指针与地址</h2>
+<p>地址运算符&amp;只能应用于内存中的对象，即变量与数组元素。它不能作用于表达式、常量或register类型的变量。</p>
+<p><code>运算优先级</code></p>
+<p>一元运算符*和&amp;的优先级比算术运算符的优先级高。</p>
+<pre><code class="lang-c">*ip += <span class="hljs-number">1</span>
+++*ip
+(*ip)++
+</code></pre>
+<p>语句(<em>ip)++中的圆括号是必需的，否则，该表达式将对ip进行加一运算，而不是对ip指向的对象进行加一运算，类似于\</em>和++这样的一元运算符遵循从右至左的结合顺序。</p>
+<h2 id="52-">5.2 指针与函数参数</h2>
+<p>传值的方式将参数值传递给被调用函数。传引用使用<code>&amp;</code></p>
+<pre><code class="lang-c"><span class="hljs-comment">// array_address.c</span>
+<span class="hljs-keyword">char</span> *str = <span class="hljs-string">"hello"</span>;
+<span class="hljs-built_in">printf</span>(<span class="hljs-string">"[begin] str %s\n"</span>, str);
+test_array_name(str);
+<span class="hljs-built_in">printf</span>(<span class="hljs-string">"[end] str %s\n"</span>, str);
+
+<span class="hljs-keyword">void</span> test_array_name(<span class="hljs-keyword">char</span> *s) {
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">"[in] str %s\n"</span>, ++s);
+}
+<span class="hljs-keyword">void</span> test_array_name1( <span class="hljs-keyword">char</span> &amp;s) {
+}
+<span class="hljs-comment">/* out
+&gt;&gt; [begin] str hello
+&gt;&gt; [in] ca[] ello
+&gt;&gt; [end] str hello
+*/</span>
+</code></pre>
+<h2 id="53-">5.3 指针与数组</h2>
+<p>通过数组下标所能完成的任何操作都可以通过指针来实现。用指针编写的程序比用数组下标编写的程序执行速度快。</p>
+<p>指针加1意味着，pa+1指向pa所指向的对象的下一个对象。</p>
+<p>在计算数组元素a[i]的值时，实际上先将其转换为*(a+i)的形式。通过数组和下标实现的表达式可等价地通过指针和偏移量实现。</p>
+<p>数组名和指针之间有一个不同之处。指针是一个变量，所以pa=a和pa++是合法的。但数组名不是变量，因此a=pa和a++形式的语句是非法的。由此可以推断，当把数组名传递给一个函数时，实际上传递的是该数组第一个元素的地址。函数由此地址生成了一个局部变量。</p>
+<pre><code class="lang-c">main
+{
+    <span class="hljs-keyword">char</span> ca[] = <span class="hljs-string">"hello"</span>;
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">"[begin] ca[] %s\n"</span>, ca);
+    test_array_name(ca);
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">"[end] ca[] %s\n"</span>, ca);
+}
+
+<span class="hljs-keyword">void</span> test_array_name(<span class="hljs-keyword">char</span> s[])
+{
+    s++;
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">"[in] ca[] %s\n"</span>, s);
+}
+out:
+&gt;&gt; [begin] ca[] hello
+&gt;&gt; [in] ca[] ello
+&gt;&gt; [end] ca[] hello
+</code></pre>
+<p>函数定义中，形式参数 char s[]和char *s是等价的，习惯用后一种形式，它直观地表明了该参数是一个指针。</p>
+<p>p[-1]、p[-2]这样的表达式在语法上都是合法的，它们分别引用位于p[0]之前的两个元素。</p>
+<h2 id="54-">5.4 地址算术运算</h2>
+<pre><code class="lang-c"><span class="hljs-preprocessor">#<span class="hljs-keyword">define</span> ALLOCSIZE 1000</span>
+<span class="hljs-keyword">static</span> <span class="hljs-keyword">char</span> allocbuf[ALLOCSIZE];
+<span class="hljs-keyword">static</span> <span class="hljs-keyword">char</span> *allocp = allocbuf;
+
+<span class="hljs-keyword">char</span> * alloc(<span class="hljs-keyword">int</span> n)
+{
+    <span class="hljs-keyword">if</span> (allocbuf + ALLOCSIZE - allocp &gt;= n) {
+        allocp += n;
+        <span class="hljs-keyword">return</span> allocp - n;
+    } <span class="hljs-keyword">else</span> 
+        <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+
+<span class="hljs-keyword">void</span> afree(<span class="hljs-keyword">char</span> *p)
+{
+    <span class="hljs-keyword">if</span> (p &gt;= allocbuf &amp;&amp; p &lt; allocbuf + ALLOCSIZE)
+        allocp = p;
+}
+</code></pre>
+<p>对指针有意义的初始化值只能是0或者是表示地址的表达式。</p>
+<p>指针与整数之间不能相互互换，但0是唯一的例外：常量0可以赋值给指针，指针也可以和常量0进行比较。程序中经常用符号常量NULL代替常量0，这样便于更清晰地说明常量0是指针的一个特殊值。</p>
+<p>0不是有效的数据地址，所以经常用代表0的符号常量NULL来判别指针是否有效。</p>
+<p>如果指针p和q指向同一个数组的成员，那么它们之间就可以进行类似与==、!=、&lt;、&gt;=的关系比较运算。</p>
+<p>指针的减法是有意义的：如果p和q指向相同数组中的元素，且p&lt;q，那么q-p+1就是位于p和q指向的元素之间的元素的数目。</p>
+<pre><code class="lang-c"><span class="hljs-keyword">int</span> <span class="hljs-built_in">strlen</span>(<span class="hljs-keyword">char</span> *s)
+{
+    <span class="hljs-keyword">char</span> *p = s;
+
+    <span class="hljs-keyword">while</span> (*p != <span class="hljs-string">'\0'</span>)
+        p++;
+    <span class="hljs-keyword">return</span> p -s;
+}
+</code></pre>
+<p>有效的指针运算：</p>
+<ol>
+<li>相同类型指针之间的赋值运算</li>
+<li>指针同整数之间的+/-运算</li>
+<li>指向相同数组中元素的两个指针之间的减法或比较运算</li>
+<li>将指针赋值为0或指针与0之间的比较运算</li>
+</ol>
+<h2 id="55-">5.5 字符指针与函数</h2>
+<pre><code class="lang-c"><span class="hljs-comment">// 两个定义之间有很大差别</span>
+<span class="hljs-keyword">char</span> amessage[] = <span class="hljs-string">"now is the time"</span>;
+<span class="hljs-keyword">char</span> *pmessage = <span class="hljs-string">"now is the time"</span>;
+</code></pre>
+<h2 id="56-">5.6 指针数组以及指向指针的指针</h2>
+<p>指针本身也是变量，所以它们也可以像其他变量一样存储在数组中。</p>
+<p>一个对字符串数组排序的例子。</p>
+<h2 id="57-">5.7 多维数组</h2>
+<p>作为参数传递给函数,在函数参数声明中必须指明数组的列数。</p>
+<pre><code class="lang-c">f(<span class="hljs-keyword">int</span> daytab[<span class="hljs-number">2</span>][<span class="hljs-number">13</span>])
+f(<span class="hljs-keyword">int</span> daytab[][<span class="hljs-number">13</span>]) 
+f(<span class="hljs-keyword">int</span> (*daytab)[<span class="hljs-number">13</span>])
+</code></pre>
+<h2 id="58-">5.8 指针数组的初始化</h2>
+<h2 id="59-">5.9 指针和多维数组</h2>
+<pre><code class="lang-c"><span class="hljs-keyword">int</span> a[<span class="hljs-number">10</span>][<span class="hljs-number">20</span>];
+<span class="hljs-keyword">int</span> *b[<span class="hljs-number">10</span>];
+</code></pre>
+<p>a分配了200个int类型长度的存储空间，用20xrow+col计算得到元素a[row][col]的位置。</p>
+<p>b仅仅分配了10个指针，并且没有对它们初始化。</p>
+<p>指针数组的一个重要优点在于，数组的每一行长度可以不同。</p>
+<h2 id="510-">5.10 命令行参数</h2>
+<p>argc为运行程序时命令行中参数的数目
+argv是一个指向字符串数组的指针，其中每个字符串对应一个参数。argv[argc]为空指针。</p>
+<pre><code class="lang-bash"><span class="hljs-built_in">echo</span> hello, world
+argc <span class="hljs-number">3</span>
+argv [<span class="hljs-string">"echo"</span>, <span class="hljs-string">"hello,"</span>, <span class="hljs-string">"world"</span>, <span class="hljs-number">0</span>]
+</code></pre>
+<p><em>++argv 是指向&quot;hello&quot;的指针
+(</em>++argv)[0] 是&#39;h&#39;, 等效为<em>*++argv
+[]与操作数的结合优先级比</em>和++高
+<em>++argv[0] 为</em>++(argv[0])目的是遍历一个特定的参数串</p>
+<h2 id="511-">5.11 指向函数的指针</h2>
+<p>声明</p>
+<pre><code class="lang-c"><span class="hljs-keyword">int</span> (*comp)(<span class="hljs-keyword">void</span> *, <span class="hljs-keyword">void</span>*)
+</code></pre>
+<p>使用</p>
+<pre><code class="lang-c"><span class="hljs-keyword">int</span> fun(<span class="hljs-keyword">int</span> x, <span class="hljs-keyword">int</span> *p);
+comp = fun;
+
+<span class="hljs-keyword">int</span> y = <span class="hljs-number">1</span>;
+(*comp)(<span class="hljs-number">3</span>, &amp;y);
+comp(<span class="hljs-number">3</span>, &amp;y);
+</code></pre>
+<p>函数指针的值是该函数机器代码表示中第一条指令的地址</p>
+<h2 id="512-">5.12 复杂声明</h2>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../cap4/cap4.html" class="navigation navigation-prev " aria-label="Previous page: 第4章 函数与程序结构"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../cap6/cap6.html" class="navigation navigation-next " aria-label="Next page: 第6章 结构"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="https://cdn.mathjax.org/mathjax/2.4-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

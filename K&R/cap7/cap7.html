@@ -1,0 +1,407 @@
+<!DOCTYPE HTML>
+<html lang="en-US" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <title>第7章 输入与输出 | </title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 1.1.0">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    
+    <link rel="next" href="../cap8/cap8.html" />
+    
+    
+    <link rel="prev" href="../cap6/cap6.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+<link rel="stylesheet" href="../gitbook/style.css">
+
+
+        
+    <div class="book" data-level="7" data-basepath=".." data-revision="1435825976787">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+    	
+    	
+    	
+
+        
+
+        
+    
+        
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                        <i class="fa fa-check"></i>
+                        
+                         Introduction
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1" data-path="cap1/cap1.html">
+            
+                
+                    <a href="../cap1/cap1.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                         第1章 导言
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2" data-path="cap2/cap2.html">
+            
+                
+                    <a href="../cap2/cap2.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                         第2章 类型、运算符与表达式
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3" data-path="cap3/cap3.html">
+            
+                
+                    <a href="../cap3/cap3.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                         第3章 控制流
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4" data-path="cap4/cap4.html">
+            
+                
+                    <a href="../cap4/cap4.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                         第4章 函数与程序结构
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5" data-path="cap5/cap5.html">
+            
+                
+                    <a href="../cap5/cap5.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                         第5章 指针与数组
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6" data-path="cap6/cap6.html">
+            
+                
+                    <a href="../cap6/cap6.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                         第6章 结构
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter active" data-level="7" data-path="cap7/cap7.html">
+            
+                
+                    <a href="../cap7/cap7.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                         第7章 输入与输出
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="8" data-path="cap8/cap8.html">
+            
+                
+                    <a href="../cap8/cap8.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                         第8章 UNIX系统接口
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="9" data-path="优先级.html">
+            
+                
+                    <a href="../优先级.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.</b>
+                        
+                         运算符优先级总结
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="10" data-path="cap2/char *s与char s[]的区别.html">
+            
+                
+                    <a href="../cap2/char *s与char s[]的区别.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.</b>
+                        
+                         char *s与char s[]的区别
+                    </a>
+                
+            
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Published using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle share dropdown"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">Twitter</button>
+                <button type="button" data-sharing="google-plus" class="button">Google</button>
+                <button type="button" data-sharing="facebook" class="button">Facebook</button>
+                <button type="button" data-sharing="weibo" class="button">Weibo</button>
+                <button type="button" data-sharing="instapaper" class="button">Instapaper</button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" ></a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-gitbook_39">
+                    
+                        <h2 id="72-printf">7.2 格式化输出——printf函数</h2>
+<p>printf
+sprintf</p>
+<h2 id="74-scanf">7.4 格式化输入——scanf函数</h2>
+<pre><code class="lang-c"><span class="hljs-keyword">int</span> <span class="hljs-built_in">scanf</span>(<span class="hljs-keyword">char</span> *format, ...)
+<span class="hljs-keyword">int</span> <span class="hljs-built_in">sscanf</span>(<span class="hljs-keyword">char</span> *<span class="hljs-built_in">string</span>, <span class="hljs-keyword">char</span> *format, arg1, arg2, ...)
+</code></pre>
+<p>arg1,arg2等参数必须是指针</p>
+<h2 id="75-">7.5 文件访问</h2>
+<pre><code class="lang-c">FILE *fopen(<span class="hljs-keyword">char</span> *name, <span class="hljs-keyword">char</span> *mode);
+<span class="hljs-keyword">int</span> fclose(FILE *fp);
+FILE *freopen(<span class="hljs-keyword">const</span> <span class="hljs-keyword">char</span> *path, <span class="hljs-keyword">const</span> <span class="hljs-keyword">char</span> *mode, FILE *stream);
+
+FILE *fp = fopen(name, <span class="hljs-string">"r"</span>|<span class="hljs-string">"w"</span>|<span class="hljs-string">"a"</span>);
+<span class="hljs-keyword">int</span> getc(FILE *fp); <span class="hljs-comment">// 返回输入流中的下一个字符，文件尾或错误，返回EOF</span>
+<span class="hljs-keyword">int</span> putc(<span class="hljs-keyword">int</span> c, FILE *fp); <span class="hljs-comment">//返回写入的字符，错误返回EOF</span>
+
+<span class="hljs-preprocessor">#<span class="hljs-keyword">define</span> getchar() getc(stdin)</span>
+<span class="hljs-preprocessor">#<span class="hljs-keyword">define</span> putchar() putc((c), stdout)</span>
+
+<span class="hljs-comment">// 文件的格式化输入或输出</span>
+<span class="hljs-keyword">int</span> <span class="hljs-built_in">fscanf</span>(FILE *fp, <span class="hljs-keyword">char</span> *format, ...)
+<span class="hljs-keyword">int</span> <span class="hljs-built_in">fprintf</span>(FILE *fp, <span class="hljs-keyword">char</span> *format, ...)
+</code></pre>
+<h2 id="76-stderrexit">7.6 错误处理——stderr和exit</h2>
+<p>exit将终止调用程序的执行。任何调用该程序的进程都可以获取exit的参数值。返回值0表示一切正常，非0返回值通常表示出现恶劣异常。exit为每个已打开的输出文件调用fclose函数，已将缓冲区中的所有输出写到相应的文件中。</p>
+<pre><code class="lang-c"><span class="hljs-keyword">int</span> ferror(FILE *fp) <span class="hljs-comment">// 如果流fp中出现错误，则函数ferror返回一个非0值。</span>
+<span class="hljs-keyword">int</span> feof(FILE *fp) <span class="hljs-comment">// 如果到达文件结尾，返回一个非0值</span>
+</code></pre>
+<h2 id="77-">7.7 行输入和行输出</h2>
+<pre><code class="lang-c"><span class="hljs-keyword">char</span> *fgets(<span class="hljs-keyword">char</span> *line, <span class="hljs-keyword">int</span> maxline, FILE *fp) <span class="hljs-comment">// 返回line，遇到文件结尾或发生错误，则返回NULL</span>
+<span class="hljs-keyword">int</span> <span class="hljs-built_in">fputs</span>(<span class="hljs-keyword">char</span> *line, FILE *fp) <span class="hljs-comment">// 如果错误返回EOF，否则返回一个非负值</span>
+
+gets和<span class="hljs-built_in">puts</span>的功能与fgets，<span class="hljs-built_in">fputs</span>类似，它们针对stdin和stdout。gets函数在读取字符串时将删除结尾的`\n`,<span class="hljs-built_in">puts</span>在写入字符串时将在结尾添加一个换行符。
+</code></pre>
+<h2 id="78-">7.8 其他函数</h2>
+<h3 id="785-">7.8.5 存储管理函数</h3>
+<pre><code class="lang-c"><span class="hljs-keyword">void</span> *<span class="hljs-built_in">malloc</span>(size_t n) <span class="hljs-comment">// 返回n字节长度的未初始化存储空间，否则返回NULL</span>
+<span class="hljs-keyword">void</span> *<span class="hljs-built_in">calloc</span>(size_t n, size_t size) <span class="hljs-comment">// 返回n个长度为size的对象组成的数组，否则返回NULL，存储空间被初始化为0</span>
+
+<span class="hljs-built_in">free</span>(p) <span class="hljs-comment">// 释放一个不是通过malloc或calloc函数得到的指针所指向的存储空间，将是一个很严重的错误。</span>
+</code></pre>
+<h3 id="787-">7.8.7 随机数发生器函数</h3>
+<pre><code class="lang-c">rand() 生成<span class="hljs-number">0</span>和RAND_MAX之间的伪随机整数序列
+srand(<span class="hljs-keyword">unsigned</span>)设置rand函数的种子数
+</code></pre>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../cap6/cap6.html" class="navigation navigation-prev " aria-label="Previous page: 第6章 结构"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../cap8/cap8.html" class="navigation navigation-next " aria-label="Next page: 第8章 UNIX系统接口"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="https://cdn.mathjax.org/mathjax/2.4-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

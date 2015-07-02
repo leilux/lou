@@ -1,0 +1,696 @@
+<!DOCTYPE HTML>
+<html lang="en-US" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <title>决策树建模 | 机器学习</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 1.1.0">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    
+    <link rel="next" href="../../PCI/cap8/cap8.html" />
+    
+    
+    <link rel="prev" href="../../PCI/cap6/cap6.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+<link rel="stylesheet" href="../../gitbook/style.css">
+
+
+        
+    <div class="book" data-level="1.6" data-basepath="../.." data-revision="1428042646490">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+    	
+    	
+    	
+
+        
+
+        
+    
+        
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../../index.html">
+                        <i class="fa fa-check"></i>
+                        
+                         Introduction
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1" data-path="PCI/readme.html">
+            
+                
+                    <a href="../../PCI/readme.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                         集体智慧编程
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="1.1" data-path="PCI/cap2/cap2.html">
+            
+                
+                    <a href="../../PCI/cap2/cap2.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                         提供推荐
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.2" data-path="PCI/cap3/cap3.html">
+            
+                
+                    <a href="../../PCI/cap3/cap3.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                         发现群组
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.3" data-path="PCI/cap4/cap4.html">
+            
+                
+                    <a href="../../PCI/cap4/cap4.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                         搜索与排名
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.4" data-path="PCI/cap5/cap5.html">
+            
+                
+                    <a href="../../PCI/cap5/cap5.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                         优化
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.5" data-path="PCI/cap6/cap6.html">
+            
+                
+                    <a href="../../PCI/cap6/cap6.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.</b>
+                        
+                         文档过滤
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter active" data-level="1.6" data-path="PCI/cap7/cap7.html">
+            
+                
+                    <a href="../../PCI/cap7/cap7.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.</b>
+                        
+                         决策树建模
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.7" data-path="PCI/cap8/cap8.html">
+            
+                
+                    <a href="../../PCI/cap8/cap8.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.7.</b>
+                        
+                         构建价格模型
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.8" data-path="PCI/cap9/cap9.html">
+            
+                
+                    <a href="../../PCI/cap9/cap9.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.8.</b>
+                        
+                         高阶分类：核心方法和SVMs
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.9" data-path="PCI/cap10/cap10.html">
+            
+                
+                    <a href="../../PCI/cap10/cap10.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.9.</b>
+                        
+                         寻找独立特征
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.10" data-path="PCI/cap11/cap11.html">
+            
+                
+                    <a href="../../PCI/cap11/cap11.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.10.</b>
+                        
+                         智能进化
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.11" data-path="PCI/cap12/cap12.html">
+            
+                
+                    <a href="../../PCI/cap12/cap12.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.11.</b>
+                        
+                         算法总结
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Published using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle share dropdown"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">Twitter</button>
+                <button type="button" data-sharing="google-plus" class="button">Google</button>
+                <button type="button" data-sharing="facebook" class="button">Facebook</button>
+                <button type="button" data-sharing="weibo" class="button">Weibo</button>
+                <button type="button" data-sharing="instapaper" class="button">Instapaper</button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../" >机器学习</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-gitbook_9">
+                    
+                        <h2 id="----modeling-with-decision-trees">决策树建模 -- Modeling with Decision Trees</h2>
+<p>三个例子</p>
+<ol>
+<li>预测一个网站上有多少用户有可能会愿意为了某些高级功能而支付费用</li>
+<li>住房价格建模</li>
+<li>来自Hot or Not网站的热度(hotness)评价进行建模</li>
+</ol>
+<h3 id="----predicting-signups">预测注册用户 -- Predicting Signups</h3>
+<pre><code class="lang-python"><span class="hljs-comment"># treepredict.py</span>
+<span class="hljs-comment"># 来源网站，位置，是否阅读过FAQ，浏览网页数，选择服务类型</span>
+my_data=[[<span class="hljs-string">'slashdot'</span>,<span class="hljs-string">'USA'</span>,<span class="hljs-string">'yes'</span>,<span class="hljs-number">18</span>,<span class="hljs-string">'None'</span>],
+        [<span class="hljs-string">'google'</span>,<span class="hljs-string">'France'</span>,<span class="hljs-string">'yes'</span>,<span class="hljs-number">23</span>,<span class="hljs-string">'Premium'</span>],
+        [<span class="hljs-string">'digg'</span>,<span class="hljs-string">'USA'</span>,<span class="hljs-string">'yes'</span>,<span class="hljs-number">24</span>,<span class="hljs-string">'Basic'</span>],
+        [<span class="hljs-string">'kiwitobes'</span>,<span class="hljs-string">'France'</span>,<span class="hljs-string">'yes'</span>,<span class="hljs-number">23</span>,<span class="hljs-string">'Basic'</span>],
+        [<span class="hljs-string">'google'</span>,<span class="hljs-string">'UK'</span>,<span class="hljs-string">'no'</span>,<span class="hljs-number">21</span>,<span class="hljs-string">'Premium'</span>],
+        [<span class="hljs-string">'(direct)'</span>,<span class="hljs-string">'New Zealand'</span>,<span class="hljs-string">'no'</span>,<span class="hljs-number">12</span>,<span class="hljs-string">'None'</span>],
+        [<span class="hljs-string">'(direct)'</span>,<span class="hljs-string">'UK'</span>,<span class="hljs-string">'no'</span>,<span class="hljs-number">21</span>,<span class="hljs-string">'Basic'</span>],
+        [<span class="hljs-string">'google'</span>,<span class="hljs-string">'USA'</span>,<span class="hljs-string">'no'</span>,<span class="hljs-number">24</span>,<span class="hljs-string">'Premium'</span>],
+        [<span class="hljs-string">'slashdot'</span>,<span class="hljs-string">'France'</span>,<span class="hljs-string">'yes'</span>,<span class="hljs-number">19</span>,<span class="hljs-string">'None'</span>],
+        [<span class="hljs-string">'digg'</span>,<span class="hljs-string">'USA'</span>,<span class="hljs-string">'no'</span>,<span class="hljs-number">18</span>,<span class="hljs-string">'None'</span>],
+        [<span class="hljs-string">'google'</span>,<span class="hljs-string">'UK'</span>,<span class="hljs-string">'no'</span>,<span class="hljs-number">18</span>,<span class="hljs-string">'None'</span>],
+        [<span class="hljs-string">'kiwitobes'</span>,<span class="hljs-string">'UK'</span>,<span class="hljs-string">'no'</span>,<span class="hljs-number">19</span>,<span class="hljs-string">'None'</span>],
+        [<span class="hljs-string">'digg'</span>,<span class="hljs-string">'New Zealand'</span>,<span class="hljs-string">'yes'</span>,<span class="hljs-number">12</span>,<span class="hljs-string">'Basic'</span>],
+        [<span class="hljs-string">'slashdot'</span>,<span class="hljs-string">'UK'</span>,<span class="hljs-string">'no'</span>,<span class="hljs-number">21</span>,<span class="hljs-string">'None'</span>],
+        [<span class="hljs-string">'google'</span>,<span class="hljs-string">'UK'</span>,<span class="hljs-string">'yes'</span>,<span class="hljs-number">18</span>,<span class="hljs-string">'Basic'</span>],
+        [<span class="hljs-string">'kiwitobes'</span>,<span class="hljs-string">'France'</span>,<span class="hljs-string">'yes'</span>,<span class="hljs-number">19</span>,<span class="hljs-string">'Basic'</span>]]
+</code></pre>
+<p>我们已经掌握了用户相关的信息，包括：用户所在的位置，他们是通过哪些网站访问到这里的，以及他们在注册之前在这个网站上花费了多少时间；我们只须找到一种方法，能够将一个合理的推测值填入“服务”栏即可。</p>
+<h3 id="----introducing-decision-trees">引入决策树 -- Introducing Decision Trees</h3>
+<p><strong>决策树</strong>：是一种更为简单的机器学习方法。它是对被观测数据（observations）进行分类的一种相当直观的方法，决策树在经过训练之后，看起来就像是以树状形式排列的一系列if-then语句。</p>
+<pre><code class="lang-python"><span class="hljs-comment"># 构造决策树的表达形式</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">decisionnode</span>:</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, col=-<span class="hljs-number">1</span>, value=None, result=None, tb=None, fb=None)</span>:</span>
+        <span class="hljs-string">'''
+        col是待检验的判断条件所对应的列索引，
+        value对应于为了使结果为true，当前列必须匹配的值，
+        tb和fb也是decisionnode，它们对应与结果分别为true或false时，树上相对于当前节点的子树上的节点，
+        results保存的是针对于当前分支的结果，它是一个字典。除叶节点外，在其他节点上该值都为None。
+        '''</span>
+        self.col = col
+        self.value = value
+        self.results = results
+        self.tb = tb
+        self.fb = fb
+</code></pre>
+<h3 id="----training-the-tree">对树进行训练 -- Training the Tree</h3>
+<p>本章使用一种叫做CART(classification and Regression Trees，即分类回归树)的算法：算法首先创建一个根节点。然后通过评估表中的所有观测变量，从中选出最合适的变量对数据进行拆分。</p>
+<p>为此，算法考查了所有不同的变量，然后从中选出一个条件（如：是否读过FAQ？）对结果数据进行分解，以使我们能更容易地推测出用户的意图来。</p>
+<pre><code class="lang-python"><span class="hljs-comment"># 在某一列上对数据集合进行拆分，能够处理数值型数据或名词性数据</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">divideset</span><span class="hljs-params">(rows, column, value)</span>:</span>
+    <span class="hljs-comment"># 定义一个函数，令其告诉我们数据属于第一组(true)还是第二组(false)</span>
+    split_function = <span class="hljs-keyword">None</span>
+    <span class="hljs-keyword">if</span> isinstance(value, int) <span class="hljs-keyword">or</span> isinstance(value, float):
+        split_function = <span class="hljs-keyword">lambda</span> row: row[column] &gt;= value
+    <span class="hljs-keyword">else</span>:
+        split_function = <span class="hljs-keyword">lambda</span> row: row[column] == value
+
+    <span class="hljs-comment"># 将数据集拆分成两个集合，并返回</span>
+    set1 = [row <span class="hljs-keyword">for</span> row <span class="hljs-keyword">in</span> rows <span class="hljs-keyword">if</span> split_function(row)]
+    set2 = [row <span class="hljs-keyword">for</span> row <span class="hljs-keyword">in</span> rows <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> split_function(row)]
+    <span class="hljs-keyword">return</span> (set1, set2)
+</code></pre>
+<p>尝试按“Read FAQ”列对结果进行拆分：</p>
+<pre><code class="lang-python"><span class="hljs-comment"># import treepredict</span>
+<span class="hljs-comment"># treepredict.divideset(treepredict.my_data, 2, 'yes')</span>
+</code></pre>
+<p>目前，拆分结果所选用的变量并不是很理想，因为两边似乎都混杂了各种情况。我们需要一种方法来选择最合适的变量。</p>
+<h3 id="----choosing-the-best-split">选择最合适的拆分方案 -- Choosing the Best Split</h3>
+<p>我们要做的，就是找出合适的变量，使得生成的两个数据集合在混杂程度上能够尽可能小。
+首先，用一个函数来对数据集合中的每一项结果进行技术。
+然后，衡量数据集合中各种因素的混合情况。两种方法：</p>
+<ol>
+<li>基尼不纯度Gini Impurity：是指将来自集合中的某种结果随机应用于集合中某一数据项的预期误差率。</li>
+<li>熵Entropy：代表的是集合的无序程度——基本上就相当于我们在此处所说的集合的混杂程度。
+两者的主要区别在于，熵达到峰值的过程要相对慢一些。因此，熵对于混乱集合的“判罚”往往要更重一些。</li>
+</ol>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">uniquecounts</span><span class="hljs-params">(rows)</span>:</span>
+    <span class="hljs-string">'''对各种可能的结果进行计数（结果为每一行数据的最后一列记录）
+    '''</span>
+    results = {}
+    <span class="hljs-keyword">for</span> row <span class="hljs-keyword">in</span> rows:
+        r = row[-<span class="hljs-number">1</span>]
+        <span class="hljs-keyword">if</span> r <span class="hljs-keyword">not</span> <span class="hljs-keyword">in</span> results: results[r] = <span class="hljs-number">0</span>
+        results[r] += <span class="hljs-number">1</span>
+    <span class="hljs-keyword">return</span> results
+</code></pre>
+<h4 id="----gini-impurity">基尼不纯度 -- Gini Impurity</h4>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">giniimpurity</span><span class="hljs-params">(rows)</span>:</span>
+    <span class="hljs-string">'''
+    误差率的加权平均: c代表Ci分类的数量，t代表总数量
+    [ c/t * (t-c)/t for c in [c1, c2, c3, ...]]
+    '''</span>
+    total = len(rows)
+    counts = uniquecounts(rows)
+    imp = <span class="hljs-number">0</span>
+    <span class="hljs-keyword">for</span> k1 <span class="hljs-keyword">in</span> counts:
+        p1 = float(counts[k1])/total
+        <span class="hljs-keyword">for</span> k2 <span class="hljs-keyword">in</span> counts:
+            <span class="hljs-keyword">if</span> k1 == k2: <span class="hljs-keyword">continue</span>
+            p2 = float(counts[k2])/total
+            imp += p1*p2
+    <span class="hljs-keyword">return</span> imp
+</code></pre>
+<h4 id="----entropy">熵 -- Entropy</h4>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">entropy</span><span class="hljs-params">(rows)</span>:</span>
+    <span class="hljs-string">'''
+    p(i) = frequency(outcome) = count(outcome) / count(total rows)
+    Entropy = [p(i)*log(p(i)) for p(i) in [...]]
+    '''</span>
+    <span class="hljs-keyword">from</span> math <span class="hljs-keyword">import</span> log
+    log2 = <span class="hljs-keyword">lambda</span> x: log(x) / log(<span class="hljs-number">2</span>)
+    results = uniquecounts(rows)
+    ent = <span class="hljs-number">0.0</span>
+    <span class="hljs-keyword">for</span> r <span class="hljs-keyword">in</span> results.keys():
+        p = float(results[r]) / len(rows)
+        ent = ent - p*log2(p)
+    <span class="hljs-keyword">return</span> ent
+</code></pre>
+<h3 id="----recursive-tree-building">以递归方式构造树 -- Recursive Tree Building</h3>
+<p>为了弄明白一个属性的好坏程度，算法首先求出整个群组的熵，然后尝试利用每个属性的可能取值对群组进行拆分，并求出两个新群组的熵。计算相应的<strong>信息增益</strong>(Information gain，当前熵与两个新群组经加权平均后的熵之间的差值)，来确定哪个属性最适合用来拆分。
+算法会针对每个属性计算相应的信息增益，然后从中选出信息增益最大的属性。
+算法根据上步的属性将观测数据拆分成了两个组，其中一组符合判断条件，另一组则与判断条件不符。
+算法随后会判断是否对其做进一步的拆分，或者我们已经获得了一个明确的结论而无须再行拆分了。
+当拆分某个节点所得的信息增益不大与0的时候，对分支的拆分才会停止。</p>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">buildtree</span><span class="hljs-params">(rows, scoref=entropy)</span>:</span>
+    <span class="hljs-string">'''它通过为当前数据集选择最合适的拆分条件来实现决策树的构造过程
+    '''</span>
+    <span class="hljs-keyword">if</span> len(rows) == <span class="hljs-number">0</span>: <span class="hljs-keyword">return</span> decisionnode()
+        current_score = scoref(rows)
+
+        <span class="hljs-comment"># 定义一些变量以记录最佳拆分条件</span>
+        best_gain = <span class="hljs-number">0.0</span>
+        best_criteria = <span class="hljs-keyword">None</span>
+        best_sets = <span class="hljs-keyword">None</span>
+
+        column_count = len(rows[<span class="hljs-number">0</span>]) - <span class="hljs-number">1</span>
+        <span class="hljs-keyword">for</span> col <span class="hljs-keyword">in</span> range(<span class="hljs-number">0</span>, column_count):
+            <span class="hljs-comment"># 当前列中生成一个由不同值构成的序列</span>
+            column_values = {}
+            <span class="hljs-keyword">for</span> row <span class="hljs-keyword">in</span> rows:
+                column_values[row[col]] = <span class="hljs-number">1</span>
+            <span class="hljs-comment"># 接下来根据这一列中的每个值，尝试对数据集进行拆分</span>
+            <span class="hljs-keyword">for</span> value <span class="hljs-keyword">in</span> column_values.keys():
+                (set1, set2) = divideset(rows, col, value)
+                <span class="hljs-comment"># 信息增益</span>
+                p = float(len(set1)) / len(rows)
+                gain = current_score - p*scoref(set1) - (<span class="hljs-number">1</span>-p)*scoref(set2)
+                <span class="hljs-keyword">if</span> gain &gt; best_gain <span class="hljs-keyword">and</span> len(set1) &gt; <span class="hljs-number">0</span> <span class="hljs-keyword">and</span> len(set2) &gt; <span class="hljs-number">0</span>:
+                    best_gain = gain
+                    best_criteria = (col, value)
+                    best_sets = (set1, set2)
+            <span class="hljs-comment"># 创建子分支</span>
+            <span class="hljs-keyword">if</span> best_gain &gt; <span class="hljs-number">0</span>:
+                trueBranch = buildtree(best_sets[<span class="hljs-number">0</span>])
+                falseBranch = buildtree(best_sets[<span class="hljs-number">1</span>])
+                <span class="hljs-keyword">return</span> decisionnode(col=best_criteria[<span class="hljs-number">0</span>], value=best_criteria[<span class="hljs-number">1</span>], tb=trueBranch, fb=falseBranch)
+            <span class="hljs-keyword">else</span>:
+                <span class="hljs-keyword">return</span> decisionnode(results=uniquecounts(rows))
+</code></pre>
+<p>代码假定了数据集的最后一列对应于目标值，我们只要简单地将数据集传进去，就可以构造出决策树来：</p>
+<pre><code># reload(treepredict)
+# tree = treepredict.buildtree(treepredict.my_data)
+</code></pre><h3 id="----displaying-the-tree">决策树的显示 -- Displaying the Tree</h3>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">printtree</span><span class="hljs-params">(tree, indent=<span class="hljs-string">''</span>)</span>:</span>
+    <span class="hljs-comment"># 这是一个叶节点吗？</span>
+    <span class="hljs-keyword">if</span> tree.results != <span class="hljs-keyword">None</span>:
+        <span class="hljs-keyword">print</span> str(tree.results)
+    <span class="hljs-keyword">else</span>:
+        <span class="hljs-comment"># 打印判断条件</span>
+        <span class="hljs-keyword">print</span> str(tree.col) + <span class="hljs-string">':'</span> + str(tree.value) + <span class="hljs-string">'? '</span>
+        <span class="hljs-comment"># 打印分支</span>
+        <span class="hljs-keyword">print</span> indent + <span class="hljs-string">'T-&gt;'</span>,
+        printtree(tree.tb, indent+<span class="hljs-string">' '</span>)
+        <span class="hljs-keyword">print</span> indent + <span class="hljs-string">'F-&gt;'</span>,
+        printtree(tree.fb, indent+<span class="hljs-string">' '</span>)
+</code></pre>
+<h4 id="----graphical-display">图形显示方式 -- Graphical Display</h4>
+<p>未看？?</p>
+<h3 id="----classifying-new-observations">对新的观测数据进行分类 -- Classifying New Observations</h3>
+<p>接受新的观测数据作为参数，然后哦根据决策树对其进行分类。</p>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">classify</span><span class="hljs-params">(observations, tree)</span>:</span>
+    <span class="hljs-keyword">if</span> tree.results != <span class="hljs-keyword">None</span>:
+        <span class="hljs-keyword">return</span> tree.results
+    <span class="hljs-keyword">else</span>:
+        v = observations[tree.col]
+        branch = <span class="hljs-keyword">None</span>
+        <span class="hljs-keyword">if</span> isinstance(v, int) <span class="hljs-keyword">or</span> isinstance(v, float):
+            <span class="hljs-keyword">if</span> v &gt;= tree.value: branch = tree.tb
+            <span class="hljs-keyword">else</span>: branch = tree.fb
+        <span class="hljs-keyword">else</span>:
+            <span class="hljs-keyword">if</span> v == tree.value: branch = tree.tb
+            <span class="hljs-keyword">else</span>: branch = tree.fb
+        <span class="hljs-keyword">return</span> classify(observations, branch)
+</code></pre>
+<p>每次调用之后，函数会根据调用结果来判断是否达到分支的末端。如果尚未达到末端，它会对观测数据作出评估，以确认列数据是否与参考值匹配。如果匹配，则会再次在True分支上调用classify；如果不匹配，则会在False分支上调用classify。
+reload(treepredict)
+treepredict.classify([&#39;(direct)&#39;,&#39;USA&#39;,&#39;yes&#39;,5], tree)# {&#39;Basic&#39;: 4}</p>
+<h3 id="----pruning-the-tree">决策树的剪枝 -- Pruning the Tree</h3>
+<p>前述方法训练决策树会有一个问题，就是决策树可能会变得<strong>过度拟合</strong>(overfitted)。也就是说，它可能会变得过于针对训练数据。专门针对训练集所创建出来的分支，其熵值与真实情况相比可能会有所降低，但决策树上的判断条件实际上是完全随意的，因此一棵过度拟合的决策树所给出的答案也许比实际情况更具特殊性。</p>
+<p>一种可能的解决办法是，只要当熵减少的数量小于某个最小值时，我们就停止分支的创建。
+但是它有一个小小的缺陷——我们有可能会遇到这样的数据集：某一次分支的创建并不会令熵降低多少，但是随后创建的分支却会使熵大幅度降低。
+对此，一种替代的策略是，先构造好如前所述的整颗树，然后在尝试消除多余的节点。这个过程就是剪枝。</p>
+<p>剪枝算法：对具有相同父节点的一组节点进行检查，判断如果将其合并，熵的增加量是否会小于某个指定的阈值。如果确实如此，则这些节点会被合并成一个单一的节点，合并后的新节点包含了所有可能的结果值。这种做法有助于避免过度拟合的情况，也使得根据决策树作出的预测结果，不至于比从数据集中得到的实际结论还要特殊。</p>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">prune</span><span class="hljs-params">(tree, mingain)</span>:</span>
+    <span class="hljs-comment"># 如果分支不是叶节点，则对其进行剪枝操作</span>
+    <span class="hljs-keyword">if</span> tree.tb.results == <span class="hljs-keyword">None</span>:
+        prune(tree.tb, mingain)
+    <span class="hljs-keyword">if</span> tree.fb.results == <span class="hljs-keyword">None</span>:
+        prune(tree.fb, mingain)
+
+    <span class="hljs-comment"># 如果两个子分支都是叶节点，则判断它们是否需要合并</span>
+    <span class="hljs-keyword">if</span> tree.tb.results != <span class="hljs-keyword">None</span> <span class="hljs-keyword">and</span> tree.fb.results != <span class="hljs-keyword">None</span>:
+        <span class="hljs-comment"># 构造合并后的数据集</span>
+        tb, fb = [], []
+        <span class="hljs-keyword">for</span> v, c <span class="hljs-keyword">in</span> tree.tb.results.items():
+            tb += [[v]]*c
+        <span class="hljs-keyword">for</span> v, c <span class="hljs-keyword">in</span> tree.fb.results.items():
+            fb += [[v]]*c
+
+        <span class="hljs-comment"># 检查熵的减少情况</span>
+        delta = entropy(tb+fb) - (entropy(tb)+entropy(fb)/<span class="hljs-number">2</span>)
+        <span class="hljs-keyword">if</span> delta &lt; mingain:
+            <span class="hljs-comment"># 合并分支</span>
+            tree.tb, tree.fb = <span class="hljs-keyword">None</span>, <span class="hljs-keyword">None</span>
+            tree.results = uniquecounts(tb+fb)
+</code></pre>
+<h3 id="----dealing-with-missing-data">处理缺失数据 -- Dealing with Missing Data</h3>
+<p>除了易于解释外，决策树还有一个优点，就是它处理缺失数据的能力。我们所使用的数据集也许会缺失某些信息。为了使决策树能够处理这种情况，我们须要实现一个新的预测函数。</p>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">mdclassify</span><span class="hljs-params">(observations, tree)</span>:</span>
+    <span class="hljs-string">'''
+    与classify相比，唯一的区别在于末尾处：如果发现有重要数据缺失，则每个分支的对应结果值都会被计算一遍，并且最终的结果值会乘以它们各自的权重。
+    '''</span>
+    <span class="hljs-keyword">if</span> tree.results != <span class="hljs-keyword">None</span>:
+        <span class="hljs-keyword">return</span> tree.results
+    <span class="hljs-keyword">else</span>:
+        v = observations[tree.col]
+        <span class="hljs-keyword">if</span> v ==  <span class="hljs-keyword">None</span>:
+            tr, fr = mdclassify(observations, tree.tb), mdclassify(observations, tree.fb)
+            tcount = sum(tr.values())
+            fcount = sum(fr.values())
+            tw = float(tcount) / (tcount+fcount)
+            fw = float(fcount) / (tcount+fcount)
+            result = {}
+            <span class="hljs-keyword">for</span> k,v <span class="hljs-keyword">in</span> tr.items(): result[k] = v*tw
+            <span class="hljs-keyword">for</span> k,v <span class="hljs-keyword">in</span> fr.items():
+                <span class="hljs-keyword">if</span> k <span class="hljs-keyword">not</span> <span class="hljs-keyword">in</span> result: result[k] = <span class="hljs-number">0</span>
+                result[k] += v*fw
+            <span class="hljs-keyword">return</span> result
+        <span class="hljs-keyword">else</span>:
+          branch = <span class="hljs-keyword">None</span>
+          <span class="hljs-keyword">if</span> isinstance(v, int) <span class="hljs-keyword">or</span> isinstance(v, float):
+              <span class="hljs-keyword">if</span> v &gt;= tree.value: branch = tree.tb
+              <span class="hljs-keyword">else</span>: branch = tree.fb
+          <span class="hljs-keyword">else</span>:
+              <span class="hljs-keyword">if</span> v == tree.value: branch = tree.tb
+              <span class="hljs-keyword">else</span>: branch = tree.fb
+          <span class="hljs-keyword">return</span> mdclassify(observations, branch)
+
+<span class="hljs-comment"># reload(treepredict)</span>
+<span class="hljs-comment"># treepredict.mdclassify(['google', None, 'yes', None], tree)</span>
+<span class="hljs-comment"># {'Premium': 1.5, 'Basic': 1.5}</span>
+<span class="hljs-comment"># treepredict.mdclassify(['google', 'France', None, None], tree)</span>
+<span class="hljs-comment"># {'None':0.125, 'Premium': 2.25, 'Basic': 0.125}</span>
+</code></pre>
+<h3 id="----dealing-with-numerical-outcomes">处理数值型结果 -- Dealing with Numerical Outcomes</h3>
+<p>如果我们将所有数字都看作是不同的分类，那么目前的算法将不会考虑这样一个事实：有些数字彼此非常的接近，而其他数字则相差很远；我们将这些数字完全看成了绝对的离散。
+为了解决这个问题，当我们拥有一棵以数字作为输出结果的决策树时，我们可以使用方差(variance)作为评价函数来取代熵或基尼不纯度。</p>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">variance</span><span class="hljs-params">(rows)</span>:</span>
+    <span class="hljs-keyword">if</span> len(rows) == <span class="hljs-number">0</span>: <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>
+    data = [float(row[-<span class="hljs-number">1</span>]) <span class="hljs-keyword">for</span> row <span class="hljs-keyword">in</span> rows]
+    mean = sum(data)/len(data)
+    variance = sum([(d-mean)**<span class="hljs-number">2</span> <span class="hljs-keyword">for</span> d <span class="hljs-keyword">in</span> data])/len(data)
+    <span class="hljs-keyword">return</span> variance
+</code></pre>
+<p>当使用方差作为评价函数来构造决策树时，我们选择节点判断条件的依据就变成了：拆分之后令数字较大者位于树的一侧，数字较小者位于树的另一侧。以这种方式来拆分数据，就可以降低分支的整体方差。</p>
+<h3 id="----modeling-home-prices">对住房价格进行建模 -- Modeling Home Prices</h3>
+<h4 id="the-zillow-api">The Zillow API</h4>
+<h3 id="----modeling-hotness">对&quot;热度&quot;评价进行建模 -- Modeling &quot;Hotness&quot;</h3>
+<h3 id="----when-to-use-decision-trees">什么时候使用决策树 -- When to Use Decision Trees</h3>
+<p>或许决策树最大的优势在于它可以轻易地对一个受训模型给予解释。在本章的例子里，执行完算法程序之后，我们不仅可以得到一棵用以预测新用户的决策树，而且还可以得到一个有助于我们做出判断的问题列表。</p>
+<p>与其他几种机器学习算法不同，决策树可以同时接受分类(categorical)数据和数值(numerical)数据作为输入。不仅如此，许多算法在运行之前都要求我们必须对输入数据做预处理，或是归一化处理，而本章的代码却可以接受包括分类数据和数值数据在内的任何数据列表，并据此构造出相应的决策树来。</p>
+<p>决策树还允许数据的不确定性分配（即允许数据的缺失）。在一棵决策树上也许会存在一部分节点，它们具有多种可能的结果值，但是又无法再进一步拆分。本章中的代码会返回一个字典对象，其中包含了针对不同结果的统计量，借助这一信息我们可以判断出结果的可信度。并不是所有算法都能够评估出一个不确定结果的概率来。</p>
+<p>缺陷：对于只包含少数几种可能结果的问题而言，算法处理起来非常有效，但是当面对拥有大量可能结果的数据集时，算法就变得不那么有效了。当输出结果有上百个的时候，决策树就会变得异常复杂，而且预测的效果也可能会大打折扣。
+只能创建满足“大于/小于”条件的节点。对于某些数据集，当我们对其进行分类的时候，决定分类的因素往往取决与更多变量的复杂组合，此时要根据前述的决策树进行分类就比较困难了。。例如，假设结果值是由两个变量的差来决定的，那么这棵树就会变得非常庞大，而且预测的准确性也会迅速下降。</p>
+<p>总之，对于有大量数值型输入和输出的问题，决策树未必是一个好的选择；如果数值型输入之间存在许多错综复杂的关系，比如金融数据或影像，决策树同样也不一定是很好的选择。决策树最适合用来处理的，是那些带分界点(breakpoints)的、由大量分类数据和数值数据共同组成的数据集。如果对决策过程的理解至关重要，那么采用决策树就再合适不过了。</p>
+<h3 id="exercies">Exercies</h3>
+<ol>
+<li><strong>针对结果的概率</strong> 目前，classify和mdclassify函数都是以总计数值的形式给出最终结果的。请对它们进行修改，以给出最终结果属于某个分类的概率。 t=sum(results.values()); {k:v/t for k,v in results.items()}</li>
+<li><strong>缺失数据的范围</strong> mdclassify允许我们使用“None”来表示一个值的缺失。对数值型数据而言，其结果未必是绝对未知的，也许相应的取值会落在某个已知的范围内。请修改mdclassify函数，允许使用一个如(20,25)这样的元组来代替原来的单一值，并且如果有必要的话，对两个分支都进行遍历。</li>
+<li><strong>提早停止向下拆分</strong> 不同于对决策树的剪枝. buildtree可以在它到达某个节点,而该节点处对应熵的下降幅度又没有达到足够量的时候,停止继续向下拆分。有时这种做法未必能够达到理想的效果,但是它的确省去了额外的剪枝工作。消修改buildtree函数、令其接受一个代表最小增益的参数,一旦最小增益条件不满足，停止继续向下拆分。<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">buildtree</span><span class="hljs-params">(rows, scoref=entropy, mingain)</span>:</span>
+ ...
+         <span class="hljs-comment"># 创建子分支</span>
+         <span class="hljs-keyword">if</span> best_gain &gt; mingain:
+ ...
+</code></pre>
+</li>
+<li><strong>数据有缺失的决策树构造</strong> 我们编写的函数能够对一个有缺失的数据行进行分类.但是如果训练集中也有数据缺失的现象,那又该怎么办呢?请修改buildtree函数,令其检查数据是否有缺失的情况,并且当我们无法将结果沿某个分支向下传递的时候,令其同时沿两个分支向下传递。<pre><code>divideset &gt;&gt; set1, set2, set3(None)
+best_sets = (set1+set3, set2+set3)
+</code></pre></li>
+<li><strong>多路径拆分</strong> 本章中构造的所有树都是严格的二叉决策树。然而,有些数据集却允许我们可以将一个节点拆分成两个以上的分支,根据这些数据集构造出来的决策树也许会更加的简单。如果是这样的话,那么你将如何表达此类决策树?又如何对其加以训练呢?</li>
+</ol>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../../PCI/cap6/cap6.html" class="navigation navigation-prev " aria-label="Previous page: 文档过滤"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../../PCI/cap8/cap8.html" class="navigation navigation-next " aria-label="Next page: 构建价格模型"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../../gitbook/app.js"></script>
+
+    
+    <script src="https://cdn.mathjax.org/mathjax/2.4-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

@@ -1,0 +1,692 @@
+<!DOCTYPE HTML>
+<html lang="en-US" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <title>Tracking | CVPR</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 1.1.0">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    
+    <link rel="next" href="../[T]tracking/特征选取.html" />
+    
+    
+    <link rel="prev" href="../[T]recognition/分类器算法.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+<link rel="stylesheet" href="../gitbook/style.css">
+
+
+        
+    <div class="book" data-level="4" data-basepath=".." data-revision="1433157582971">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+    	
+    	
+    	
+
+        
+
+        
+    
+        
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                        <i class="fa fa-check"></i>
+                        
+                         Introduction
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1" data-path="立体视觉-牛人-算法.html">
+            
+                
+                    <a href="../立体视觉-牛人-算法.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                         立体视觉-牛人-算法
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2" data-path="papers.html">
+            
+                
+                    <a href="../papers.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                         papers
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3" data-path="[T]recognition/readme.html">
+            
+                
+                    <a href="../[T]recognition/readme.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                         Recognition
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="3.1" data-path="[T]recognition/目标表达.html">
+            
+                
+                    <a href="../[T]recognition/目标表达.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                         目标表达
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.2" data-path="[T]recognition/目标检测算法归纳.html">
+            
+                
+                    <a href="../[T]recognition/目标检测算法归纳.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                         目标检测算法归纳
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.3" data-path="[T]recognition/特征提取.html">
+            
+                
+                    <a href="../[T]recognition/特征提取.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                         特征提取
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3.4" data-path="[T]recognition/分类器算法.html">
+            
+                
+                    <a href="../[T]recognition/分类器算法.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                         分类器算法
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter active" data-level="4" data-path="[T]tracking/readme.html">
+            
+                
+                    <a href="../[T]tracking/readme.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                         Tracking
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="4.1" data-path="[T]tracking/特征选取.html">
+            
+                
+                    <a href="../[T]tracking/特征选取.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                         特征选取
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.2" data-path="[T]tracking/跟踪算法归纳.html">
+            
+                
+                    <a href="../[T]tracking/跟踪算法归纳.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                         跟踪算法归纳
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.3" data-path="[T]tracking/发展方向.html">
+            
+                
+                    <a href="../[T]tracking/发展方向.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                         发展方向
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5" data-path="ROS/README.html">
+            
+                
+                    <a href="../ROS/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                         ROS
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="5.1" data-path="ROS/ecto.html">
+            
+                
+                    <a href="../ROS/ecto.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                         ecto
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.2" data-path="ROS/openni.html">
+            
+                
+                    <a href="../ROS/openni.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                         openni
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.3" data-path="opencv.html">
+            
+                
+                    <a href="../opencv.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                         opencv
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.4" data-path="pcl.html">
+            
+                
+                    <a href="../pcl.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                         pcl
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.5" data-path="ROS/FLIR-ptu46.html">
+            
+                
+                    <a href="../ROS/FLIR-ptu46.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.</b>
+                        
+                         FLIR ptu46
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5.6" data-path="ROS/eclipse.html">
+            
+                
+                    <a href="../ROS/eclipse.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.</b>
+                        
+                         IDE Eclipse for ROS
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="6" data-path="kinect/README.html">
+            
+                
+                    <a href="../kinect/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                         Kinect
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="7" data-path="toolchain/README.html">
+            
+                
+                    <a href="../toolchain/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                         工具链
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="7.1" data-path="toolchain/docker.html">
+            
+                
+                    <a href="../toolchain/docker.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.1.</b>
+                        
+                         docker
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="8" data-path="研究方法.html">
+            
+                
+                    <a href="../研究方法.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                         研究方法
+                    </a>
+                
+            
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Published using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle share dropdown"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">Twitter</button>
+                <button type="button" data-sharing="google-plus" class="button">Google</button>
+                <button type="button" data-sharing="facebook" class="button">Facebook</button>
+                <button type="button" data-sharing="weibo" class="button">Weibo</button>
+                <button type="button" data-sharing="instapaper" class="button">Instapaper</button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >CVPR</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-gitbook_9">
+                    
+                        <h1 id="tracker">Tracker</h1>
+<p>$$ 经过实验测试，仅依靠颜色特征进行目标物体跟踪存在诸多缺点，本文对此进行了改进，将目标颜色和形状特征相结合作为机器人目标跟踪决策控制的依据<sup><a href="#1">[1]</a></sup></p>
+<p>$D 在变化的背景中对运动目标进行跟踪，具有较大的复杂度<sup><a href="#1">[1]</a></sup></p>
+<p>目标跟踪的任务是获得目标在连续图像序列中位置随时间变化的轨迹。</p>
+<p>目标的表达用的都是形状或外观模型。选择的表达模型限制了其可以使用的运动模型或分解方法。比如点表达的目标只能体现平移运动。几何形状表达仿射或投影更加合适。而对非刚性目标，轮廓表达最为合适，可用参数性和非参数型的模型描述其运动。</p>
+<p><strong>目标跟踪思路</strong></p>
+<ol>
+<li>自下而上（数据驱动）：不依赖于先验知识，直接从图像序列中获得目标的运动信息并进行跟踪。常用方法：帧差法、背景差法。优点：快。</li>
+<li>自上而下（模型驱动）：依赖于所建模型或先验知识，在图像序列中进行匹配运算从而进行目标定位和跟踪。常用法：粒子滤波。</li>
+</ol>
+<p>四种<strong>目标跟踪算法</strong>：  </p>
+<ol>
+<li>基于<strong>区域</strong>:通过图像分割获得略大于目标的矩形作模板（基于纹理特征或颜色），相关运算；</li>
+<li>基于<strong>特征</strong>:基于局部特征集来跟踪，常与卡曼滤波联合使用。通过Canny算子获得边缘特征，通过SUSAN算子获得角点信息。</li>
+<li>基于<strong>变形模板</strong>：主动轮廓模型/Snake模型。</li>
+<li>基于<strong>模型</strong>:线图模型、2D模型、3D模型。</li>
+</ol>
+<p>三种跟踪算法分别是：点跟踪，核跟踪，轮廓跟踪。</p>
+<ul>
+<li><strong>点跟踪</strong>：在连续帧中检测到的目标被表达为点。这种方法需要引入其它方法来进行目标检测。</li>
+<li><strong>核跟踪</strong>：关联与目标的形状和外观表达。核函数可以是关联与一个直方图的矩形或椭圆模板。目标通过在连续帧中计算核的运动来跟踪。运动可以是参数形式的平移、旋转或仿射等。</li>
+<li><strong>轮廓跟踪</strong>：由在每帧中估计目标区域进行跟踪。轮廓跟踪方法用到的信息可以是外观密度和形状模型。给定目标模型，轮廓由形状匹配或轮廓推导得到。这些方法都可以视作时域上的目标分割。</li>
+</ul>
+<p><img src="../_images/目标跟踪算法分类.gif" alt=""></p>
+<p>图1 目标跟踪算法分类</p>
+<p><img src="../_images/目标跟踪代表算法.gif" alt=""></p>
+<p>图2 目标跟踪代表算法</p>
+<p><a href="http://dpinglee.blog.163.com/blog/static/1440977532011619105252845/" target="_blank">dp笔记1：图像目标检测与识别</a></p>
+<blockquote>
+<p>跟踪算法的难点：</p>
+<ol>
+<li>鲁棒性；</li>
+<li>准确性；</li>
+<li>快速性；</li>
+</ol>
+<p>运动目标检测跟踪的复杂性表现在</p>
+<ol>
+<li>光线变化。由于时间变化，一天的早晚，上午和下午，日光的照射强度和角度变化会引起光线变化；再由于天气原因，同样会导致照射光线的变化。由于光线的变化，要使一种检测算法适应各种光照情况是比较困难的。</li>
+<li>场景中运动目标的干扰。比如，大面积区域中各种目标的运动，车辆的的突然停止与突然启动；场景中某些目标的频繁变动，比如，摇摆的树枝和树叶，水面的波动等。</li>
+<li>初始化问题。在一些监视场景中，要得到无噪声干扰的纯背景图像(不含检测目标和运动背景目标的图像)是很困难的。比如，人车繁忙的交通场景。</li>
+<li>遮挡与孔洞问题。要检测的运动目标，被背景中的目标所遮挡情况下，怎样判断遮挡。</li>
+<li>阴影问题。在目标检测当中，如何将被检测目标与其产生的阴影区分开来，从而仅检测目标部分。</li>
+<li>目标的失踪。运动目标长期停留在场景中，有可能变成背景目标。
+由于目标检测的复杂性，想要建立一个通用的，适合所有情况的目标检测算法是不现实，也是不可能的。因此，根据具体情况，建立符合实际条件的目标检测算法是目标检测方法的研究方向。</li>
+</ol>
+</blockquote>
+<p><a href="http://dpinglee.blog.163.com/blog/static/144097753201110284942875/?suggestedreading&amp;wumii" target="_blank">运动目标检测跟踪各过程算法综述</a></p>
+<h2 id="ref">ref</h2>
+<p><span id=1>[1] </span><a href="">基于立体视觉的移动机器人导航方法研究.pdf</a></p>
+<p><span id="2">[2] </span><a href="http://research.microsoft.com/en-us/um/people/jiansun/papers/CVPR14_HandTracking.pdf" target="_blank">Realtime and Robust Hand Tracking from Depth - CVPR14_HandTracking.pdf</a></p>
+<blockquote>
+<p>通过重新定义手的模型和能量方程，这个工作将手部跟踪做到了实时并且算法也很鲁棒。在PC上不用GPU也达到了25FPS（每秒显示帧数），而平均误差在测试数据上降低到10mm，相比其他方法提升50%左右。对手势的准确识别是现在很流行的一个问题。</p>
+</blockquote>
+<p><a href="http://www.oschina.net/question/234345_44429" target="_blank">通过手机摄像头实现动作追踪一----单帧的识别</a></p>
+<p><a href="http://blog.sina.com.cn/s/blog_5d3402010100s0tr.html" target="_blank">camshift结合kalman预测对特定颜色的跟踪</a></p>
+<blockquote>
+<p>如题，针对camshift跟踪容易丢失目标问题，加入了kalman滤波来预测下一个可能存在的位置，跟踪丢失的几率降低，当时也会有丢失的时候，这个就是看背景的反射投影跟跟踪的目标相近度有多高了。<br>Ps：其实camshift也不是说很容易丢失跟踪目标，这个在本人的测试来看，当你的摄像头采集的帧速很高的时候，基本也不会丢失，而当帧速低的时候就容易丢失了，本文改出来的算法就是当帧速不高的时候有那么点用，自己测试看看就知道了。我最高帧速在30+的时候就没得问题，15帧 or 更低的时候就有可能用上这个算法。<br>当然目标物动突然加速，（而且真的很快，有多快自己试），那么要不丢失还是很有难度的。<br>再则。有两个阀值是要手动选择的，可以看反射投影图看观察，当只有目标物的时候最佳，这个怎么自动做到目前没得什么好办法，调好这两个阀值对跟踪也有帮助的。</p>
+</blockquote>
+<p><a href="http://blog.csdn.net/yangtrees/article/details/7680904" target="_blank">比微软kinect更强的视频跟踪算法--TLD跟踪算法介绍 </a></p>
+<p><a href="http://mobile.163.com/13/0820/08/96N5DDGF0011671M.html" target="_blank">视觉传感器Pixy追踪颜色 打造机器人系统</a></p>
+<blockquote>
+<p>对于轻量级任务，Pixy是一种替代技术，可以让你打造一个机器人程序或者系统，通过感觉特定颜色，识别及跟踪物体。<br>该技术的创造者Charmed Labs及卡耐基梅隆大学表示，该技术的识别速度很快，因为它采用以颜色为中心的办法——使该产品只是将特定颜色的物体的视觉数据发送给相互配合的微型控制器，而不是输出所有视觉数据以进行图像处理。</p>
+</blockquote>
+<p><a href="http://wu-robotics.googlecode.com/svn/branches/stable/motion_capture/" target="_blank">wu-robotics lab: motion_capture</a></p>
+<p><a href="http://www.opticsjournal.net/abstract.htm?id=OJ121122000132u1w4z7" target="_blank">二自由度云台的机器视觉控制 </a></p>
+<blockquote>
+<p>本文建立了基于机器视觉反馈的云台控制模型, 并通过相邻帧间的目标位置预测来简化搜索算法, 实现快速高效的视觉云台对运动目标的连续跟踪。在制定系统空间转角输入量的控制策略中, 简化了控制模型并对产生的偏差量进行了分析。结果表明, 简化后的控制算法能够实现快速反馈和像面调整, 在 25帧/秒时实现对运动目标稳健跟踪, 且跟踪精度高于传统算法; 在目标速度 2 m/s、相机 60帧/秒时, 改进算法实现了对运动目标的连续跟踪。同时提出了立体视觉系统模型及其在云台控制中的应用, 通过像面坐标获取空间位置信息以规避目标跟丢现象。</p>
+</blockquote>
+<p><a href="http://www.cnki.com.cn/Article/CJFDTotal-JZCK201309082.htm" target="_blank">基于二自由度云台的目标跟踪系统设计</a></p>
+<blockquote>
+<p>【摘要】：针对动目标跟踪普遍存在的跟踪精度不高及跟踪时间短的问题,设计了一种基于二自由度云台的新型的目标跟踪控制系统;该系统将采用TMS320DM642作为主控制器,利用STM32f417作为云台控制器,完成目标跟踪系统的硬件设计,并将跟踪、控制等算法移植到系统平台上,实现对动目标的主动协同跟踪;在复杂的户外背景下,对高速车辆进行跟踪特性测试;实验结果表明,在目标遇到遮挡或者形状改变、旋转情形下,该系统仍能稳定跟踪目标。<br>【作者单位】： 西安飞机工业(集团)航电科技工程公司;西北工业大学;<br>【关键词】： 二自由度云台 主动协同跟踪 云台控制<br>【基金】：航空科学基金(20080153002)<br>【分类号】：TP391.41<br>【正文快照】：0引言目标跟踪[1]是近年来计算机视觉领域中备受关注的研究方向,在安全监控、运动检测、航空航天等领域都具有十分重要的研究意义和广泛的实用价值。它融合了图像处理、模式识别、人工智能、自动控制及嵌入式系统等相关领域的先进技术与研究成果,是一种跨学科、多技术融合的  </p>
+</blockquote>
+<p><a href="http://www.cqvip.com/QK/90942X/201311/48298553.html" target="_blank">基于Kinect的云台控制方法研究</a></p>
+<blockquote>
+<p>摘　要：本文提出了通过头部运动控制井下摄像头的方法。首先通过Kinect体感设备获取人体头部和肩部图像景深数据，并采用骨骼跟踪技术对其进行处理，建立各个关节的3D坐标；再根据3D坐标值计算出头部的摆动角度，控制系统根据用户需求将其转变为控制信号传送给井下云台控制器，从而实现井下摄像头旋转方向和角度的控制。试验表明，该方法能够有效地控制井下摄像头。<br>【关键词】    云台控制 人体头部 摄像头 运动控制 跟踪技术 摆动角度 信号传送 用户需求<br>【出　处】    《内江科技》2013年 第11期 74-75页　共2页<br>【收　录】    中文科技期刊数据库  </p>
+</blockquote>
+<p><a href="http://www.cnki.com.cn/Article/CJFDTotal-XNZK201309019.htm" target="_blank">基于Kinect的运动目标跟踪与三维测量</a></p>
+<blockquote>
+<p>【摘要】：首先利用微软Kinect的图像传感器获得RGB图像,并且利用CamShift算法实时跟踪一个选中的目标物体,然后获得该目标物体的质心,最后将该质心映射到Kinect深度传感器获得的深度图像中,从而实时得到该运动目标质心的三维坐标.实验结果表明,在目标与背景的色彩空间有一定偏差的情况下,该方法能够实时跟踪目标物体并获得目标物体质心的三维坐标.<br>【作者单位】： 西南大学计算机与信息科学学院;<br>【关键词】： Kinect 运动目标跟踪 三维坐标<br>【基金】：家蚕基因组生物学国家重点实验室开放课题研究基金<br>【分类号】：TP391.41<br>【正文快照】：目前,运动目标的跟踪是计算机视觉领域的一个研究热点,在安全监控、手势识别、智能交通以及未知环境下移动机器人的视觉导航等领域都有非常广阔的应用前景.针对这些不同的应用领域,研究者提出了众多的运动目标跟踪算法,总体上可以分为以下几种:基于区域的跟踪、基于特征的跟</p>
+</blockquote>
+<h2 id="camshift">camshift算法</h2>
+<p>OpenCV自带例子中的camShift算法，可以分为三个部分：（引用自这里 <a href="http://www.cnblogs.com/tornadomeet/archive/2012/03/15/2398769.html）" target="_blank">http://www.cnblogs.com/tornadomeet/archive/2012/03/15/2398769.html）</a></p>
+<p>一、计算色彩投影图（反向投影）：</p>
+<ol>
+<li><p>为了减少光照变化对目标跟踪的影响，首先将图像从RGB颜色空间转换到HSV颜色空间；</p>
+</li>
+<li><p>对H分量进行直方图统计，直方图代表了不同H分量取值出现的概率，或者说可以据此查找出H分量的大小为x时的概率或像素个数，即，得到颜色概率查找表；</p>
+</li>
+<li><p>将图像中每个像素的值用其颜色出现的概率进行替换，由此得到颜色概率分布图；</p>
+</li>
+</ol>
+<p>以上三个步骤称之为反向投影，需要提醒的是，颜色概率分布图是一个灰度图像；</p>
+<p>二、meanShift寻优</p>
+<p>前面提到过meanShift算法（<a href="http://blog.csdn.net/carson2005/article/details/7337432）是一种非参数概率密度估计方法，它通过不断迭代计算得到最优搜索窗口的位置和大小。" target="_blank">http://blog.csdn.net/carson2005/article/details/7337432）是一种非参数概率密度估计方法，它通过不断迭代计算得到最优搜索窗口的位置和大小。</a></p>
+<p>meanshift算法是一种密度函数梯度估计的非参数方法，通过迭代寻优找到概率分布的极值来定位目标。
+算法过程为：
+(1).在颜色概率分布图中选取搜索窗W
+(2).计算零阶距：</p>
+<p>计算一阶距：</p>
+<p>计算搜索窗的质心：</p>
+<p>(3).调整搜索窗大小
+宽度为；长度为1.2s；
+(4).移动搜索窗的中心到质心，如果移动距离大于预设的固定阈值，则重复2)3)4)，直到搜索窗的中心与质心间的移动距离小于预设的固定阈值，或者循环运算的次数达到某一最大值，停止计算。关于meanshift的收敛性证明可以google相关文献。</p>
+<p>三、camShift跟踪算法</p>
+<p>前面提到，camShift其实就是在视频序列的每一帧当中都运用meanShift，并将上一帧的meanShift结果作为下一帧的初始值，如此不断循环迭代，就可以实现目标的跟踪了。</p>
+<p>camshift是MeanShift算法的改进，称为连续自适应的MeanShift算法，CamShift算法的全称是&quot;Continuously Adaptive Mean-SHIFT&quot;，它的基本思想是视频图像的所有帧作MeanShift运算，并将上一帧的结果（即Search Window的中心和大小）作为下一帧MeanShift算法的Search Window的初始值，如此迭代下去。</p>
+<ol>
+<li>首先在影像串列中选择ㄧ区域。</li>
+<li>计算此区域的颜色2D机率分布。</li>
+<li>用MeanShift演算法来收敛欲追踪的区域。</li>
+<li>集中收敛的区域，并标示之。</li>
+<li>每个frame重复(3)(4)。</li>
+</ol>
+<p>Camshift 关键就在于当目标的大小发生改变的时候，此算法可以自适应调整目标区域继续跟踪。</p>
+<p>camshift能有效解决目标变形和遮挡的问题，对系统资源要求不高，时间复杂度低，在简单背景下能够取得良好的跟踪效果。但当背景较为复杂，或者有许多与目标颜色相似像素干扰的情况下，会导致跟踪失败。因为它单纯的考虑颜色直方图，忽略了目标的空间分布特性，所以这种情况下需加入对跟踪目标的预测算法。</p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../[T]recognition/分类器算法.html" class="navigation navigation-prev " aria-label="Previous page: 分类器算法"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../[T]tracking/特征选取.html" class="navigation navigation-next " aria-label="Next page: 特征选取"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="https://cdn.mathjax.org/mathjax/2.4-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
